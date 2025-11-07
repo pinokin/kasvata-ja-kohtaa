@@ -1,0 +1,7 @@
+:root {
+    --clr-sage-light: #FBFFF4;
+}
+
+body {
+    background-color: var(--clr-sage-light);
+}
