@@ -1,0 +1,34 @@
+/* 
+    Kevin Powell's scaffolding
+    https://www.youtube.com/watch?v=c13gpBrnGEw
+ */
+.content-grid {
+    --_gap: clamp(1rem, 6vw, 3rem);
+    --_full: minmax(var(--_gap), 1fr);
+    --_content: min(70ch, 100% - var(--_gap) * 2);
+    --_breakout: minmax(0, 2rem);
+
+    display: grid;
+    grid-template-columns: 
+        [full-width-start] var(--_full) 
+        [breakout-start] var(--_breakout)
+        [content-start] var(--_content) [content-end] 
+        var(--_breakout) [breakout-end] 
+        var(--_full) [full-width-end];
+}
+
+.content-grid > :not(.breakout, .full-width),
+.full-width > :not(.breakout, .full-width) {
+    grid-column: content;
+}
+
+.content-grid > .breakout {
+    grid-column: breakout;
+}
+
+.content-grid > .full-width {
+    grid-column: full-width;
+
+    display: grid;
+    grid-template-columns: inherit;
+}

@@ -1,7 +1,30 @@
+@import "reset.css";
+@import "layout.css";
+@import "spacing.css";
 @import "color.css";
 @import "typography.css";
 
-* {
-    box-sizing: border-box;
+main {
+    min-height: 100vh;
+}
+
+button {
+    min-width: fit-content;
+}
+
+/* Helpers */
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.flow > * + * {
+    margin-block-start: var(--flow-space, 1em);
 }
 

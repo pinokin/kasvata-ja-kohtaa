@@ -1,0 +1,30 @@
+---
+import Navigation from "./Navigation.astro";
+---
+
+<header>
+    <a href="/" class="logo">Kasvata & kohtaa</a>
+    <Navigation placement="header" orientation="horizontal" />
+</header>
+
+<style>
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: var(--clr-sage);
+        padding: 1.5rem 2rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: currentColor;
+    }
+
+    .logo {
+        font-family: var(--ff-display);
+        font-weight: var(--fw-light);
+        font-size: var(--fs-2);
+        line-height: 1.1;
+    }
+</style>

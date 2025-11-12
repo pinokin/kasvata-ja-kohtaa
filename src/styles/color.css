@@ -1,7 +1,21 @@
 :root {
     --clr-sage-light: #FBFFF4;
+    --clr-sage: #ADB898;
+    --clr-sand: #E3D6C5;
+    --clr-pink-light: #FFF1ED;
+    --clr-pink: #FFD2C6;
+    --clr-peach: #C67661;
+    --clr-red-fox: #4D1000;
+    --clr-red-wine: #2F0A00;
+    --clr-red-wine-dark: #120400;
+    --clr-grey-lightest: #FBFEFF;
+    --clr-grey-light: #CFE0E7;
+    --clr-grey: #B5C6CD;
+    --clr-grey-dark: #7D8E95;
+    --clr-grey-darkest: #55666D;
 }
 
 body {
     background-color: var(--clr-sage-light);
+    color: var(--clr-red-wine);
 }

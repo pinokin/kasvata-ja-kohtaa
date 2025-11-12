@@ -49,10 +49,26 @@
     --fs-8: clamp(4.2998rem, 3.0109rem + 5.7287vw, 7.4506rem);
 }
 
+/* Typographic resets */
+
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+p,
+li,
+figcaption {
+    text-wrap: pretty;
+    max-width: 65ch;
+}
+
+/* Typographic styles */
+
 body {
     font-family: var(--ff-base);
     font-weight: var(--fw-regular);
     font-size: var(--fs-0);
+    line-height: 1.5;
 }
 
 b {
@@ -62,6 +78,7 @@ b {
 h1, h2, h3, h4 {
     font-family: var(--ff-display);
     font-weight: var(--fw-light);
+    line-height: 1.1;
 }
 
 h1 b, h2 b, h3 b, h4 b {
@@ -95,4 +112,3 @@ h5 {
 h6 {
     font-size: var(--fs-1);
 }
-

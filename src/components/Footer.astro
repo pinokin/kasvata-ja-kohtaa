@@ -1,0 +1,34 @@
+---
+import Navigation from "./Navigation.astro";
+---
+
+<footer>
+    <section>
+        <Navigation />
+        <p>Toinen palsta</p>
+    </section>
+    <section class="copyright">Copyright &copy; 2025 Kasvata ja kohtaa</section>
+</footer>
+
+<style>
+    footer {
+        display: grid;
+        color: var(--clr-pink-light);
+    }
+
+    section {
+        display: flex;
+        justify-content: space-around;
+        background: var(--clr-red-wine);
+        padding: var(--space-s) var(--space-m);
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--clr-red-wine-dark);
+        margin: auto;
+        width: 100%;
+    }
+</style>

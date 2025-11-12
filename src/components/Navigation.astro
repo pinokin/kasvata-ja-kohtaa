@@ -1,0 +1,46 @@
+---
+const { placement = "footer", orientation = "vertical" } = Astro.props;
+---
+
+<nav class={placement}>
+    <ul class={orientation}>
+        <li>
+            <a href="/">Etusivu</a>
+        </li>
+        <li>
+            <a href="#">Blogi</a>
+        </li>
+        <li>
+            <a href="#">Yhteystiedot</a>
+        </li>
+    </ul>
+</nav>
+
+<style>
+    ul {
+        list-style: none;
+
+        &.horizontal {
+            display: flex;
+            gap: var(--space-s);
+        }
+    }
+
+    a {
+        color: currentColor;
+
+        &:hover,
+        &:focus-visible {
+            color: var(--clr-red-fox);
+        }
+    }
+
+    .header a {
+        text-decoration: none;
+
+        &:hover,
+        &:focus-visible {
+            text-decoration: underline;
+        }
+    }
+</style>
