@@ -14,6 +14,10 @@
     --flow-space: var(--space-s);
 }
 
+main {
+    margin-block: var(--space-m) var(--space-xl);
+}
+
 h1, h2 {
     margin-block: var(--space-l) var(--space-s);
 }
