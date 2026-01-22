@@ -75,10 +75,15 @@ b {
     font-weight: var(--fw-bold);
 }
 
+p {
+    text-wrap: pretty;
+}
+
 h1, h2, h3, h4 {
     font-family: var(--ff-display);
     font-weight: var(--fw-light);
-    line-height: 1.1;
+    line-height: 0.9;
+    text-wrap: balance;
 }
 
 h1 b, h2 b, h3 b, h4 b {
@@ -87,6 +92,7 @@ h1 b, h2 b, h3 b, h4 b {
 
 h5, h6 {
     font-weight: var(--fw-bold);
+    text-wrap: balance;
 }
 
 h1 {
@@ -112,3 +118,4 @@ h5 {
 h6 {
     font-size: var(--fs-1);
 }
+

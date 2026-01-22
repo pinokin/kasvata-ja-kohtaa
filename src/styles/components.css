@@ -1,0 +1,19 @@
+.breakout {
+    font-size: 1.1em;
+}
+
+.services {
+    ul {
+        display: grid;
+        gap: var(--space-s);
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+        list-style-type: none;
+    }
+}
+
+.introductions {
+    ul {
+        list-style-type: none;
+    }
+}

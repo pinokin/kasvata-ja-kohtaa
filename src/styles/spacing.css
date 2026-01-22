@@ -11,5 +11,21 @@
     --space-2xl: clamp(4rem, 3.5909rem + 1.8182vw, 5rem);
     --space-3xl: clamp(6rem, 5.3864rem + 2.7273vw, 7.5rem);
 
-    --flow-space: --space-s;
+    --flow-space: var(--space-s);
+}
+
+h1, h2 {
+    margin-block: var(--space-l) var(--space-s);
+}
+
+header > h2 {
+    margin-block: 0;
+}
+
+h3, h4 {
+    margin-block: var(--space-m) var(--space-xs);
+}
+
+p + p {
+    margin-block-start: var(--flow-space);
 }

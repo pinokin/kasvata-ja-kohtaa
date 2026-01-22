@@ -3,6 +3,7 @@
 @import "spacing.css";
 @import "color.css";
 @import "typography.css";
+@import "components.css";
 
 main {
     min-height: 100vh;
