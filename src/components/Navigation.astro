@@ -1,17 +1,19 @@
 ---
+import HeaderLink from "./HeaderLink.astro";
+
 const { placement = "footer", orientation = "vertical" } = Astro.props;
 ---
 
 <nav class={placement}>
     <ul class={orientation}>
         <li>
-            <a href="/">Etusivu</a>
+            <HeaderLink href="/">Etusivu</HeaderLink>
         </li>
         <li>
-            <a href="#">Blogi</a>
+            <HeaderLink href="/blogi">Blogi</HeaderLink>
         </li>
         <li>
-            <a href="#">Yhteystiedot</a>
+            <HeaderLink href="/yhteystiedot">Yhteystiedot</HeaderLink>
         </li>
     </ul>
 </nav>
