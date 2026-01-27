@@ -97,14 +97,17 @@ h5, h6 {
 
 h1 {
     font-size: var(--fs-7);
+    letter-spacing: -0.04em;
 }
 
 h2 {
     font-size: var(--fs-6);
+    letter-spacing: -0.03em;
 }
 
 h3 {
     font-size: var(--fs-5);
+    letter-spacing: -0.02em;
 }
 
 h4 {
