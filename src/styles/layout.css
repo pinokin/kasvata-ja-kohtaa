@@ -5,7 +5,7 @@
 .content-grid {
     --_gap: clamp(1rem, 6vw, 3rem);
     --_full: minmax(var(--_gap), 1fr);
-    --_content: min(70ch, 100% - var(--_gap) * 2);
+    --_content: min(80ch, 100% - var(--_gap) * 2);
     --_breakout: minmax(0, 2rem);
 
     display: grid;
