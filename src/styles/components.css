@@ -26,6 +26,11 @@
     }
 }
 
+.ingress {
+    text-align: center;
+    font-size: var(--fs-0);
+}
+
 .services {
     margin-block: var(--space-m);
     ul {
