@@ -13,9 +13,13 @@
     --clr-grey: #B5C6CD;
     --clr-grey-dark: #7D8E95;
     --clr-grey-darkest: #55666D;
+
+    --clr-body-default: var(--clr-sage-light);
+    --clr-font-default: var(--clr-red-wine);
+    --clr-header: var(--clr-sage);
 }
 
 body {
-    background-color: var(--clr-sage-light);
-    color: var(--clr-red-wine);
+    background-color: var(--clr-body-default);
+    color: var(--clr-font-default);
 }

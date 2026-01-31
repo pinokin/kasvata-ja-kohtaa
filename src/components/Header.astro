@@ -2,19 +2,13 @@
 import Navigation from "./Navigation.astro";
 ---
 
-<header>
+<header class="main-navigation">
     <h2><a href="/" class="logo">Kasvata & kohtaa</a></h2>
     <Navigation placement="header" orientation="horizontal" />
 </header>
 
 <style>
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: var(--clr-sage);
-        padding: 1.5rem 2rem;
-    }
+
 
     a {
         text-decoration: none;
