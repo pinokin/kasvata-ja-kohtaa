@@ -7,7 +7,7 @@
     justify-content: space-between;
     align-items: center;
     background: var(--clr-header);
-    padding: var(--space-s) var(--space-m);
+    padding: var(--space-s) var(--space-m) var(--space-m);
 
     position: relative;
 
@@ -32,7 +32,7 @@
 }
 
 .services {
-    margin-block: var(--space-m);
+    margin-block: var(--space-xl);
     ul {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -41,7 +41,7 @@
 
         li {
             --_service-color: var(--clr-peach);
-            --_service-padding: var(--space-s);
+            --_service-padding: var(--space-l);
             --_conic-gradient: conic-gradient(var(--_service-color) 0 0);
             padding-block-end: var(--_service-padding);
 
