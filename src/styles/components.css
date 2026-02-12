@@ -1,12 +1,12 @@
 .main-navigation {
-    --_curve-color: var(--clr-body-default);
+    --_curve-color: var(--clr-surface-1);
     --_curve-width: 100%;
     --_curve-height: 1rem;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--clr-header);
+    background: var(--clr-brand);
     padding: var(--space-s) var(--space-m) var(--space-m);
 
     position: relative;
@@ -40,7 +40,7 @@
         list-style-type: none;
 
         li {
-            --_service-color: var(--clr-peach);
+            --_service-color: var(--clr-surface-complimentary-1);
             --_service-padding: var(--space-l);
             --_conic-gradient: conic-gradient(var(--_service-color) 0 0);
             padding-block-end: var(--_service-padding);
@@ -57,28 +57,70 @@
 
             &:nth-child(1) {
                 background-color: var(--_service-color);
+                color: var(--clr-text-complimentary-inverse);
             }
 
             &:nth-child(2) {
-                --_service-color: var(--clr-pink);
+                /* --_service-color: var(--clr-pink); */
+                --_service-color: var(--clr-surface-complimentary-2);
                 background-color: var(--_service-color);
             }
 
             &:nth-child(3) {
-                --_service-color: var(--clr-sand);
+                /* --_service-color: var(--clr-sand); */
+                --_service-color: var(--clr-surface-complimentary-3);
                 background-color: var(--_service-color);
             }
 
             &:nth-child(4) {
-                --_service-color: var(--clr-sage);
+                --_service-color: var(--clr-brand);
                 background-color: var(--_service-color);
             }
         }
     }
 }
 
+.contact-methods {
+    padding: var(--space-l) var(--space-xl);
+    border-radius: 1rem;
+    background-color: var(--clr-surface-2);
+
+    .contact-insta img {
+        margin-block-start: var(--space-s);
+        stroke: var(--clr-surface-2);
+    }
+}
+
 .introductions {
+    --_image-size: 10rem;
+
     ul {
         list-style-type: none;
+    }
+
+    ul li {
+        display: grid;
+        grid-template-columns: var(--_image-size) 1fr;
+        gap: var(--space-s);
+        margin-block-end: var(--space-l);
+
+        &:first-child {
+            margin-block-start: var(--space-l);
+        }
+
+        &.reverse {
+            grid-template-columns: 1fr var(--_image-size);
+        }
+
+        div {
+            margin-block-start: var(--space-m);
+        }
+    }
+
+    .temporary-image {
+        width: var(--_image-size);
+        height: var(--_image-size);
+        border-radius: 100%;
+        background-color: var(--clr-surface-2);
     }
 }
