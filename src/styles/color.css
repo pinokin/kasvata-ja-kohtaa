@@ -53,7 +53,10 @@
     --clr-surface-complimentary-2: var(--clr-palette-red-fox-2);
     --clr-surface-complimentary-3: var(--clr-palette-red-fox-3);
 
-    --clr-brand: var(--clr-palette-sage-4);   
+    --clr-brand: var(--clr-palette-sage-4);
+    --clr-emmi: var(--clr-sand);
+    --clr-jessica: var(--clr-sage);
+    --clr-severi: var(--clr-pink);
 }
 
 body {

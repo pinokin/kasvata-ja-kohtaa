@@ -91,14 +91,39 @@
     }
 }
 
+.who-we-are {
+    margin-block: var(--space-l) var(--space-xl);
+
+    img {
+        border-radius: 1rem;
+        box-shadow: var(--box-shadow);
+    }
+}
+
 .introductions {
-    --_image-size: 10rem;
+    --_image-size: 12rem;
+
+    background-color: var(--clr-surface-2);
 
     ul {
         list-style-type: none;
     }
 
     ul li {
+        --_personal-color: var(--clr-brand);
+
+        &.emmi {
+            --_personal-color: var(--clr-emmi);
+        }
+
+        &.jessica {
+            --_personal-color: var(--clr-jessica);
+        }
+
+        &.severi {
+            --_personal-color: var(--clr-severi);
+        }
+
         display: grid;
         grid-template-columns: var(--_image-size) 1fr;
         gap: var(--space-s);
@@ -112,15 +137,13 @@
             grid-template-columns: 1fr var(--_image-size);
         }
 
-        div {
+        img {
+            width: var(--_image-size);
+            height: var(--_image-size);
             margin-block-start: var(--space-m);
+            border: 0.4rem solid var(--_personal-color);
+            border-radius: 100%;
+            background-color: var(--_personal-color);
         }
-    }
-
-    .temporary-image {
-        width: var(--_image-size);
-        height: var(--_image-size);
-        border-radius: 100%;
-        background-color: var(--clr-surface-2);
     }
 }

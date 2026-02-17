@@ -5,12 +5,20 @@
 @import "typography.css";
 @import "components.css";
 
+:root {
+    --box-shadow: 0.25rem 0.25rem 0.25rem var(--clr-palette-sage-3);
+}
+
 main {
     min-height: 100vh;
 }
 
 button {
     min-width: fit-content;
+}
+
+p {
+    margin-block-end: var(--space-m);
 }
 
 hr {
@@ -20,15 +28,14 @@ hr {
     width: 20rem;
     height: 2rem;
     position: relative;
-    background-image: url('/assets/doodle-viiva.png');
+    background-image: url('/assets/viiva.png');
     background-size: contain;
     background-repeat: no-repeat;
 
     &::after {
         content: '';
         position: absolute;
-        width: 100%;
-        height: 100%;
+        inset: 0;
         background: var(--clr-sage);
         mix-blend-mode: overlay;
     }
