@@ -95,6 +95,7 @@
     margin-block: var(--space-l) var(--space-xl);
 
     img {
+        aspect-ratio: 3/2;
         border-radius: 1rem;
         box-shadow: var(--box-shadow);
     }
