@@ -1,19 +1,150 @@
-.breakout {
-    font-size: 1.1em;
+.main-navigation {
+    --_curve-color: var(--clr-surface-1);
+    --_curve-width: 100%;
+    --_curve-height: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--clr-brand);
+    padding: var(--space-s) var(--space-m) var(--space-m);
+
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+
+        height: var(--_curve-height);
+        background-color: var(--_curve-color);
+        -webkit-mask-image: url('/public/assets/curve.svg');
+        -webkit-mask-size: var(--_curve-width) var(--_curve-height);
+        mask-image: url('/public/assets/curve.svg');
+        mask-size: var(--_curve-width) var(--_curve-height);
+    }
+}
+
+.ingress {
+    text-align: center;
+    font-size: var(--fs-0);
 }
 
 .services {
+    margin-block: var(--space-xl);
     ul {
         display: grid;
-        gap: var(--space-s);
         grid-template-columns: 1fr 1fr;
         margin: 0;
         list-style-type: none;
+
+        li {
+            --_service-color: var(--clr-surface-complimentary-1);
+            --_service-padding: var(--space-l);
+            --_conic-gradient: conic-gradient(var(--_service-color) 0 0);
+            padding-block-end: var(--_service-padding);
+
+            &:nth-child(odd) {
+                padding-inline-end: var(--_service-padding);
+                border-image: var(--_conic-gradient) 0 0 0 1/0 50%/0 100vw;
+            }
+
+            &:nth-child(even) {
+                padding-inline-start: var(--_service-padding);
+                border-image: var(--_conic-gradient) 0 1 0 0/0 50%/0 100vw;
+            }
+
+            &:nth-child(1) {
+                background-color: var(--_service-color);
+                color: var(--clr-text-complimentary-inverse);
+            }
+
+            &:nth-child(2) {
+                /* --_service-color: var(--clr-pink); */
+                --_service-color: var(--clr-surface-complimentary-2);
+                background-color: var(--_service-color);
+            }
+
+            &:nth-child(3) {
+                /* --_service-color: var(--clr-sand); */
+                --_service-color: var(--clr-surface-complimentary-3);
+                background-color: var(--_service-color);
+            }
+
+            &:nth-child(4) {
+                --_service-color: var(--clr-brand);
+                background-color: var(--_service-color);
+            }
+        }
+    }
+}
+
+.contact-methods {
+    padding: var(--space-l) var(--space-xl);
+    border-radius: 1rem;
+    background-color: var(--clr-surface-2);
+
+    .contact-insta img {
+        margin-block-start: var(--space-s);
+        stroke: var(--clr-surface-2);
+    }
+}
+
+.who-we-are {
+    margin-block: var(--space-l) var(--space-xl);
+
+    img {
+        aspect-ratio: 3/2;
+        border-radius: 1rem;
+        box-shadow: var(--box-shadow);
     }
 }
 
 .introductions {
+    --_image-size: 12rem;
+
+    background-color: var(--clr-surface-2);
+
     ul {
         list-style-type: none;
+    }
+
+    ul li {
+        --_personal-color: var(--clr-brand);
+
+        &.emmi {
+            --_personal-color: var(--clr-emmi);
+        }
+
+        &.jessica {
+            --_personal-color: var(--clr-jessica);
+        }
+
+        &.severi {
+            --_personal-color: var(--clr-severi);
+        }
+
+        display: grid;
+        grid-template-columns: var(--_image-size) 1fr;
+        gap: var(--space-s);
+        margin-block-end: var(--space-l);
+
+        &:first-child {
+            margin-block-start: var(--space-l);
+        }
+
+        &.reverse {
+            grid-template-columns: 1fr var(--_image-size);
+        }
+
+        img {
+            width: var(--_image-size);
+            height: var(--_image-size);
+            margin-block-start: var(--space-m);
+            border: 0.4rem solid var(--_personal-color);
+            border-radius: 100%;
+            background-color: var(--_personal-color);
+        }
     }
 }

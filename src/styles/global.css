@@ -5,12 +5,40 @@
 @import "typography.css";
 @import "components.css";
 
+:root {
+    --box-shadow: 0.25rem 0.25rem 0.25rem var(--clr-palette-sage-3);
+}
+
 main {
     min-height: 100vh;
 }
 
 button {
     min-width: fit-content;
+}
+
+p {
+    margin-block-end: var(--space-m);
+}
+
+hr {
+    margin-block: var(--space-l);
+    margin-inline: auto;
+    border: 0px;
+    width: 20rem;
+    height: 2rem;
+    position: relative;
+    background-image: url('/assets/viiva.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: var(--clr-sage);
+        mix-blend-mode: overlay;
+    }
 }
 
 /* Helpers */

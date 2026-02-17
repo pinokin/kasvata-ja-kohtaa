@@ -22,6 +22,7 @@ html {
 /* Min body height */
 body {
     min-height: 100svh;
+    overflow-x: clip;
 }
 
 /* Makes using container queries easier */

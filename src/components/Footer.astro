@@ -3,9 +3,18 @@ import Navigation from "./Navigation.astro";
 ---
 
 <footer>
+    <img src="/images/footer.webp" alt="" />
     <section>
         <Navigation />
-        <p>Toinen palsta</p>
+        <article>
+            <h2>Kasvata & kohtaa</h2>
+            <p>Y-tunnus: 1234567-8</p>
+            <p>
+                Metsäpolku 1 A 1</br>
+                09990 Kaupunki</br>
+                email: posti@kasvatajakohtaa.fi
+            </p>
+        </article>
     </section>
     <section class="copyright">Copyright &copy; 2026 Kasvata ja kohtaa</section>
 </footer>
@@ -13,14 +22,31 @@ import Navigation from "./Navigation.astro";
 <style>
     footer {
         display: grid;
+        background-color: var(--clr-pink);
         color: var(--clr-pink-light);
     }
 
+    h2 {
+        font-size: var(--fs-2);
+        margin: 0;
+        margin-block-end: var(--space-m);
+    }
+
+    img {
+        height: 45rem;
+        width: 100%;
+        object-fit: cover;
+    }
+
     section {
-        display: flex;
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         background: var(--clr-red-wine);
-        padding: var(--space-s) var(--space-m);
+        padding: var(--space-l) var(--space-xl);
+    }
+
+    article p:last-child {
+        margin-block-end: 0;
     }
 
     .copyright {
