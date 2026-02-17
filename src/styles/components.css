@@ -1,7 +1,7 @@
 .main-navigation {
     --_curve-color: var(--clr-surface-1);
-    --_curve-width: 100%;
-    --_curve-height: 1rem;
+    --_curve-width: 100vw;
+    --_curve-height: 2vh;
 
     display: flex;
     justify-content: space-between;
@@ -14,7 +14,7 @@
     &::after {
         content: '';
         position: absolute;
-        width: 100%;
+        width: 100vw;
         bottom: 0;
 
         height: var(--_curve-height);
@@ -33,27 +33,21 @@
 
 .services {
     margin-block: var(--space-xl);
+
     ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
         margin: 0;
         list-style-type: none;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 40ch), 1fr));
+        container: services-grid / inline-size;
 
         li {
             --_service-color: var(--clr-surface-complimentary-1);
             --_service-padding: var(--space-l);
             --_conic-gradient: conic-gradient(var(--_service-color) 0 0);
-            padding-block-end: var(--_service-padding);
 
-            &:nth-child(odd) {
-                padding-inline-end: var(--_service-padding);
-                border-image: var(--_conic-gradient) 0 0 0 1/0 50%/0 100vw;
-            }
-
-            &:nth-child(even) {
-                padding-inline-start: var(--_service-padding);
-                border-image: var(--_conic-gradient) 0 1 0 0/0 50%/0 100vw;
-            }
+            border-image: var(--_conic-gradient) 0 1 0 1/0 50%/0 100vw;
 
             &:nth-child(1) {
                 background-color: var(--_service-color);
@@ -75,6 +69,20 @@
             &:nth-child(4) {
                 --_service-color: var(--clr-brand);
                 background-color: var(--_service-color);
+            }
+
+            @container services-grid (inline-size > calc(40ch * 2)) {
+
+                &:nth-child(odd) {
+                    padding-inline-end: var(--_service-padding);
+                    border-image: var(--_conic-gradient) 0 0 0 1/0 50%/0 100vw;
+                }
+
+                &:nth-child(even) {
+                    padding-inline-start: var(--_service-padding);
+                    border-image: var(--_conic-gradient) 0 1 0 0/0 50%/0 100vw;
+                }
+
             }
         }
     }
