@@ -19,10 +19,56 @@
 
         height: var(--_curve-height);
         background-color: var(--_curve-color);
-        -webkit-mask-image: url('/public/assets/curve.svg');
+        -webkit-mask-image: url('/assets/curve.svg');
         -webkit-mask-size: var(--_curve-width) var(--_curve-height);
-        mask-image: url('/public/assets/curve.svg');
+        mask-image: url('/assets/curve.svg');
         mask-size: var(--_curve-width) var(--_curve-height);
+    }
+}
+
+.hero {
+    position: relative;
+
+    h1 {
+        text-align: center;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 25vw;
+        height: 25vw;
+        opacity: 0.4;
+        background-image: 
+            linear-gradient(oklch(from var(--clr-brand) l c var(--clr-hue-sage))),
+            linear-gradient(var(--clr-surface-1)),
+            url('/assets/vesivaripallo.png');
+        background-blend-mode: color, saturation;
+        background-size: 25vw;
+        background-repeat: no-repeat;
+        transform: translate(-27vw, 12vh);
+        z-index: -1;
+    }
+
+    &::after {
+        --_flower-size: 25vw;
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: var(--_flower-size);
+        height: var(--_flower-size);
+        opacity: 0.5;
+        background-image: 
+            linear-gradient(oklch(from var(--clr-brand) l c var(--clr-hue-sage))),
+            linear-gradient(var(--clr-surface-1)),
+            url('/assets/vesivarikukka.png');
+        background-blend-mode: color, saturation;
+        background-size: var(--_flower-size);
+        background-repeat: no-repeat;
+        transform: translate(var(--_flower-size), 20vh);
     }
 }
 
@@ -46,7 +92,10 @@
             --_service-color: var(--clr-surface-complimentary-1);
             --_service-padding: var(--space-l);
             --_conic-gradient: conic-gradient(var(--_service-color) 0 0);
+            --_icon-size: 2rem;
 
+            position: relative;
+            padding-block-start: calc(var(--_icon-size) + 1rem);
             border-image: var(--_conic-gradient) 0 1 0 1/0 50%/0 100vw;
 
             &:nth-child(1) {
@@ -84,7 +133,75 @@
                 }
 
             }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: var(--_icon-size);
+                height: var(--_icon-size);
+                opacity: 0.5;
+                background-image: 
+                    /* linear-gradient(oklch(from var(--clr-red-fox) l c var(--_service-color))), */
+                    linear-gradient(var(--_service-color)),
+                    url('/assets/rinkula.png');
+                background-blend-mode: color, saturation;
+                background-size: var(--_icon-size);
+                background-repeat: no-repeat;
+                background-position: center center;
+                transform: translate(20cqw, 1rem);
+            }
         }
+    }
+}
+
+.details {
+    position: relative;
+
+    &::before {
+        --_flower-size: 25vw;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: var(--_flower-size);
+        height: var(--_flower-size);
+        opacity: 0.5;
+        background-image: 
+            linear-gradient(oklch(from var(--clr-brand) l c var(--clr-hue-sage))),
+            linear-gradient(var(--clr-surface-1)),
+            url('/assets/vesivarikukka.png');
+        background-blend-mode: color, saturation;
+        background-size: var(--_flower-size);
+        background-repeat: no-repeat;
+        transform: translate(calc(var(--_flower-size) * -1), 10vh);
+        z-index: -1;
+    }    
+
+    &::after {
+        --_bg-size: 30vw;
+        --_ball-size: 25vw;
+        --_ring-size: 22vw;
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: var(--_bg-size);
+        height: var(--_bg-size);
+        opacity: 0.3;
+        background-image: 
+            linear-gradient(oklch(from var(--clr-brand) l c var(--clr-hue-sage))),
+            linear-gradient(var(--clr-surface-1)),
+            url('/assets/rinkula.png'),
+            url('/assets/vesivaripallo.png');
+        background-blend-mode: color, saturation;
+        background-size: var(--_ring-size), var(--_ball-size);
+        background-repeat: no-repeat;
+        background-position: 
+            right,
+            top;
+        transform: translate(var(--_bg-size), 10vh);
     }
 }
 
@@ -118,20 +235,60 @@
         margin-block-start: var(--space-l);
     
         li {
+            position: relative;
+            isolation: isolate;
             margin-block-end: var(--space-l);
 
             --_personal-color: var(--clr-brand);
+            --_personal-blob: url('/assets/ympyra.png');
 
             &.emmi {
                 --_personal-color: var(--clr-emmi);
+                --_personal-blob: url('/assets/vesivarikukka.png');
+
+                &::before {
+                    top: 0;
+                    left: 0;
+                    transform: translate(-3rem, 8rem) scale(1.1);
+                }
             }
 
             &.jessica {
                 --_personal-color: var(--clr-jessica);
+                --_personal-blob: url('/assets/rinkula.png');
+
+                &::before {
+                    top: 0;
+                    right: 0;
+                    transform: translate(3rem, 1rem) scale(1.1) rotate(45deg);
+                }
             }
 
             &.severi {
                 --_personal-color: var(--clr-severi);
+                --_personal-blob: url('/assets/vesivaripallo.png');
+
+                &::before {
+                    top: 0;
+                    left: 0;
+                    transform: translate(-3rem, 1rem) scale(1.1) rotate(135deg);
+                }
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 10rem;
+                height: 10rem;
+                opacity: 0.4;
+                background-image: 
+                    linear-gradient(oklch(from var(--clr-surface-2) l c var(--clr-hue-sage))),
+                    linear-gradient(var(--clr-surface-2)),
+                    var(--_personal-blob);
+                background-blend-mode: color, saturation;
+                background-size: 10rem;
+                background-repeat: no-repeat;
+                z-index: -1;
             }
 
             img {

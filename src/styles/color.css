@@ -1,6 +1,6 @@
 :root {
     --clr-sage-light: #FBFFF4;
-    --clr-sage: #ADB898;
+    --clr-sage: #AEB79B; /* ORIGINAL: #ADB898 */
     --clr-sand: #E3D6C5;
     --clr-pink-light: #FFF1ED;
     --clr-pink: #FFD2C6;
@@ -18,16 +18,16 @@
     --clr-font-default: var(--clr-red-wine);
 
     --clr-hue-sage: 122; /* Original 122.91 */
-    --clr-palette-sage-1: oklch(0.98 0.046 var(--clr-hue-sage));
-    --clr-palette-sage-2: oklch(0.90 0.046 var(--clr-hue-sage));
-    --clr-palette-sage-3: oklch(0.82 0.046 var(--clr-hue-sage));
-    --clr-palette-sage-4: oklch(0.77 0.046 var(--clr-hue-sage));
-    --clr-palette-sage-5: oklch(0.65 0.046 var(--clr-hue-sage));
-    --clr-palette-sage-6: oklch(0.55 0.046 var(--clr-hue-sage));
-    --clr-palette-sage-7: oklch(0.45 0.046 var(--clr-hue-sage));
-    --clr-palette-sage-8: oklch(0.35 0.046 var(--clr-hue-sage));
-    --clr-palette-sage-9: oklch(0.25 0.046 var(--clr-hue-sage));
-    --clr-palette-sage-10: oklch(0.15 0.046 var(--clr-hue-sage));
+    --clr-palette-sage-1: oklch(0.994 0.015 var(--clr-hue-sage));
+    --clr-palette-sage-2: oklch(0.90 0.035 var(--clr-hue-sage));
+    --clr-palette-sage-3: oklch(0.82 0.04 var(--clr-hue-sage));
+    --clr-palette-sage-4: oklch(0.77 0.04 var(--clr-hue-sage));
+    --clr-palette-sage-5: oklch(0.65 0.04 var(--clr-hue-sage));
+    --clr-palette-sage-6: oklch(0.55 0.04 var(--clr-hue-sage));
+    --clr-palette-sage-7: oklch(0.45 0.04 var(--clr-hue-sage));
+    --clr-palette-sage-8: oklch(0.35 0.04 var(--clr-hue-sage));
+    --clr-palette-sage-9: oklch(0.25 0.035 var(--clr-hue-sage));
+    --clr-palette-sage-10: oklch(0.15 0.03 var(--clr-hue-sage));
 
     --clr-hue-red-fox: 37;
     --clr-palette-red-fox-1: oklch(0.98 0.0459 var(--clr-hue-red-fox));

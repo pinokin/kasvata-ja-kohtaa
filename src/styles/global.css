@@ -21,24 +21,35 @@ p {
     margin-block-end: var(--space-m);
 }
 
+ol {
+    margin: 0;
+    padding-inline-start: var(--space-xl);
+
+    li {
+        padding-inline-start: var(--space-xs);
+
+        &::marker {
+            font-size: var(--fs-2);
+        }
+    }
+
+}
+
 hr {
     margin-block: var(--space-l);
     margin-inline: auto;
     border: 0px;
     width: 20rem;
     height: 2rem;
-    position: relative;
-    background-image: url('/assets/viiva.png');
+
+    opacity: 0.6;
+    background-image: 
+        linear-gradient(oklch(from var(--clr-brand) l c var(--clr-hue-sage))),
+        linear-gradient(var(--clr-surface-1)),
+        url('/assets/viiva.png');
+    background-blend-mode: color, saturation;
     background-size: contain;
     background-repeat: no-repeat;
-
-    &::after {
-        content: '';
-        position: absolute;
-        inset: 0;
-        background: var(--clr-sage);
-        mix-blend-mode: overlay;
-    }
 }
 
 /* Helpers */
