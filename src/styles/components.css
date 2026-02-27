@@ -26,6 +26,10 @@
     }
 }
 
+.main-page h1 {
+    text-align: center;
+}
+
 .ingress {
     text-align: center;
     font-size: var(--fs-0);
