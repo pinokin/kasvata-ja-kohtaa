@@ -27,18 +27,15 @@ hr {
     border: 0px;
     width: 20rem;
     height: 2rem;
-    position: relative;
-    background-image: url('/assets/viiva.png');
+
+    opacity: 0.6;
+    background-image: 
+        linear-gradient(oklch(from var(--clr-brand) l c var(--clr-hue-sage))),
+        linear-gradient(var(--clr-surface-1)),
+        url('/assets/viiva.png');
+    background-blend-mode: color, saturation;
     background-size: contain;
     background-repeat: no-repeat;
-
-    &::after {
-        content: '';
-        position: absolute;
-        inset: 0;
-        background: var(--clr-sage);
-        mix-blend-mode: overlay;
-    }
 }
 
 /* Helpers */
