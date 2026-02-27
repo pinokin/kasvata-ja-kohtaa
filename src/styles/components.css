@@ -235,20 +235,60 @@
         margin-block-start: var(--space-l);
     
         li {
+            position: relative;
+            isolation: isolate;
             margin-block-end: var(--space-l);
 
             --_personal-color: var(--clr-brand);
+            --_personal-blob: url('/assets/ympyra.png');
 
             &.emmi {
                 --_personal-color: var(--clr-emmi);
+                --_personal-blob: url('/assets/vesivarikukka.png');
+
+                &::before {
+                    top: 0;
+                    left: 0;
+                    transform: translate(-3rem, 8rem) scale(1.1);
+                }
             }
 
             &.jessica {
                 --_personal-color: var(--clr-jessica);
+                --_personal-blob: url('/assets/rinkula.png');
+
+                &::before {
+                    top: 0;
+                    right: 0;
+                    transform: translate(3rem, 1rem) scale(1.1) rotate(45deg);
+                }
             }
 
             &.severi {
                 --_personal-color: var(--clr-severi);
+                --_personal-blob: url('/assets/vesivaripallo.png');
+
+                &::before {
+                    top: 0;
+                    left: 0;
+                    transform: translate(-3rem, 1rem) scale(1.1) rotate(135deg);
+                }
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 10rem;
+                height: 10rem;
+                opacity: 0.4;
+                background-image: 
+                    linear-gradient(oklch(from var(--clr-surface-2) l c var(--clr-hue-sage))),
+                    linear-gradient(var(--clr-surface-2)),
+                    var(--_personal-blob);
+                background-blend-mode: color, saturation;
+                background-size: 10rem;
+                background-repeat: no-repeat;
+                z-index: -1;
             }
 
             img {
