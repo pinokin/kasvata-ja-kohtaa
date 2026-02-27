@@ -18,7 +18,7 @@
     --clr-font-default: var(--clr-red-wine);
 
     --clr-hue-sage: 122; /* Original 122.91 */
-    --clr-palette-sage-1: oklch(0.98 0.035 var(--clr-hue-sage));
+    --clr-palette-sage-1: oklch(0.994 0.015 var(--clr-hue-sage));
     --clr-palette-sage-2: oklch(0.90 0.035 var(--clr-hue-sage));
     --clr-palette-sage-3: oklch(0.82 0.04 var(--clr-hue-sage));
     --clr-palette-sage-4: oklch(0.77 0.04 var(--clr-hue-sage));

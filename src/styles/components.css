@@ -19,15 +19,57 @@
 
         height: var(--_curve-height);
         background-color: var(--_curve-color);
-        -webkit-mask-image: url('/public/assets/curve.svg');
+        -webkit-mask-image: url('/assets/curve.svg');
         -webkit-mask-size: var(--_curve-width) var(--_curve-height);
-        mask-image: url('/public/assets/curve.svg');
+        mask-image: url('/assets/curve.svg');
         mask-size: var(--_curve-width) var(--_curve-height);
     }
 }
 
-.main-page h1 {
-    text-align: center;
+.hero {
+    position: relative;
+
+    h1 {
+        text-align: center;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 25vw;
+        height: 25vw;
+        opacity: 0.4;
+        background-image: 
+            linear-gradient(oklch(from var(--clr-brand) l c var(--clr-hue-sage))),
+            linear-gradient(var(--clr-surface-1)),
+            url('/assets/vesivaripallo.png');
+        background-blend-mode: color, saturation;
+        background-size: 25vw;
+        background-repeat: no-repeat;
+        transform: translate(-27vw, 12vh);
+        z-index: -1;
+    }
+
+    &::after {
+        --_flower-size: 25vw;
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: var(--_flower-size);
+        height: var(--_flower-size);
+        opacity: 0.5;
+        background-image: 
+            linear-gradient(oklch(from var(--clr-brand) l c var(--clr-hue-sage))),
+            linear-gradient(var(--clr-surface-1)),
+            url('/assets/vesivarikukka.png');
+        background-blend-mode: color, saturation;
+        background-size: var(--_flower-size);
+        background-repeat: no-repeat;
+        transform: translate(var(--_flower-size), 20vh);
+    }
 }
 
 .ingress {
