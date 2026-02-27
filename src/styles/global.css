@@ -21,6 +21,20 @@ p {
     margin-block-end: var(--space-m);
 }
 
+ol {
+    margin: 0;
+    padding-inline-start: var(--space-xl);
+
+    li {
+        padding-inline-start: var(--space-xs);
+
+        &::marker {
+            font-size: var(--fs-2);
+        }
+    }
+
+}
+
 hr {
     margin-block: var(--space-l);
     margin-inline: auto;
