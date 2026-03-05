@@ -12,9 +12,11 @@ import PrimaryLayout from "../layouts/PrimaryLayout.astro"
 			<h1>Kasvata & kohtaa</h1>
 			<p class="ingress">Jokainen lapsi ja nuori ansaitsee tulla nähdyksi ja ymmärretyksi – myös silloin, kun arki tuo mukanaan haasteita.</p>
 			<hr />
-			<p>Joukkueessasi on mukana lapsi, joka toistuvasti omalla toiminnallaan häiritsee muiden tekemistä ja uhmaa aikuisia. Harrastusryhmässäsi on nuori, jolle keskittyminen yhteiseen tekemiseen tai epäonnistuminen tuntuu mahdottomalta. Joku jää toistuvasti ulkopuolelle tai tulee kiusatuksi. Ryhmässä on negatiivinen ilmapiiri ja tunteet purkautuvat hallitsemattomasti.</p>
-			<p>Tarjoamme käytännönläheistä apua, jonka tavoitteena on yhdessä löytää keinoja ratkaista juuri tällaisia tilanteita ja kohdata käytöksellä haastavia lapsia ja nuoria välittäen, johdonmukaisesti ja ratkaisukeskeisesti.</p>
-			<p>Järjestämme koulutuksia, valmennusta ja työpajoja, joissa opitaan konkreettisia tapoja tukea yksilöä ja samalla vahvistaa ryhmää. Luodaan yhdessä ympäristö, jossa jokaisella on mahdollisuus onnistua ja kuulua joukkoon.</p>
+			<p class="our-methods-ingress">Joukkueessasi on mukana lapsi, joka toistuvasti omalla toiminnallaan häiritsee muiden tekemistä ja uhmaa aikuisia. Harrastusryhmässäsi on nuori, jolle keskittyminen yhteiseen tekemiseen tai epäonnistuminen tuntuu mahdottomalta. Joku jää toistuvasti ulkopuolelle tai tulee kiusatuksi. Ryhmässä on negatiivinen ilmapiiri ja tunteet purkautuvat hallitsemattomasti.</p>
+			<ol class="our-methods">
+				<li>Tarjoamme käytännönläheistä apua, jonka tavoitteena on yhdessä löytää keinoja ratkaista juuri tällaisia tilanteita ja kohdata käytöksellä haastavia lapsia ja nuoria välittäen, johdonmukaisesti ja ratkaisukeskeisesti.</li>
+				<li>Järjestämme koulutuksia, valmennusta ja työpajoja, joissa opitaan konkreettisia tapoja tukea yksilöä ja samalla vahvistaa ryhmää. Luodaan yhdessä ympäristö, jossa jokaisella on mahdollisuus onnistua ja kuulua joukkoon.</li>
+			</ol>
 
 		</section>
 
@@ -63,3 +65,18 @@ import PrimaryLayout from "../layouts/PrimaryLayout.astro"
 	</main>
 </PrimaryLayout>
 
+<style>
+	.our-methods-ingress {
+		padding: var(--space-l) var(--space-xl);
+		border-radius: 1rem;
+		background-color: var(--clr-surface-2);
+	}
+
+	.our-methods {
+		padding-inline: var(--space-xl);
+		
+		li {
+			padding-block-end: var(--space-m);
+		}
+	}
+</style>

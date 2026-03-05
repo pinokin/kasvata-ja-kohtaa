@@ -58,9 +58,9 @@
     --clr-link-hover: var(--clr-red-fox);
 
     --clr-brand: var(--clr-palette-sage-4);
-    --clr-emmi: var(--clr-sand);
+    --clr-emmi: var(--clr-sage); /* --clr-sand */
     --clr-jessica: var(--clr-sage);
-    --clr-severi: var(--clr-pink);
+    --clr-severi: var(--clr-sage); /* --clr-pink */
 }
 
 body {

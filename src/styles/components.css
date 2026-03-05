@@ -235,8 +235,6 @@
         margin-block-start: var(--space-l);
     
         li {
-            position: relative;
-            isolation: isolate;
             margin-block-end: var(--space-l);
 
             --_personal-color: var(--clr-brand);
@@ -246,10 +244,15 @@
                 --_personal-color: var(--clr-emmi);
                 --_personal-blob: url('/assets/vesivarikukka.png');
 
-                &::before {
+                .decorated-image::before {
                     top: 0;
                     left: 0;
-                    transform: translate(-3rem, 8rem) scale(1.1);
+                    transform: translate(-5rem, 1rem) scale(1.1) rotate(45deg);
+                }
+
+                img {
+                    -webkit-transform: scaleX(-1);
+                    transform: scaleX(-1);
                 }
             }
 
@@ -257,7 +260,7 @@
                 --_personal-color: var(--clr-jessica);
                 --_personal-blob: url('/assets/rinkula.png');
 
-                &::before {
+                .decorated-image::before {
                     top: 0;
                     right: 0;
                     transform: translate(3rem, 1rem) scale(1.1) rotate(45deg);
@@ -268,33 +271,42 @@
                 --_personal-color: var(--clr-severi);
                 --_personal-blob: url('/assets/vesivaripallo.png');
 
-                &::before {
+                .decorated-image::before {
                     top: 0;
                     left: 0;
                     transform: translate(-3rem, 1rem) scale(1.1) rotate(135deg);
                 }
             }
 
-            &::before {
+            --_image-size: 12rem;
+            --_decoration-size: 10rem;
+
+            .decorated-image {
+                min-width: var(--_image-size);
+                position: relative;
+                isolation: isolate;
+            }
+
+            .decorated-image::before {
                 content: '';
                 position: absolute;
-                width: 10rem;
-                height: 10rem;
+                width: var(--_decoration-size);
+                height: var(--_decoration-size);
                 opacity: 0.4;
                 background-image: 
                     linear-gradient(oklch(from var(--clr-surface-2) l c var(--clr-hue-sage))),
                     linear-gradient(var(--clr-surface-2)),
                     var(--_personal-blob);
                 background-blend-mode: color, saturation;
-                background-size: 10rem;
+                background-size: var(--_decoration-size);
                 background-repeat: no-repeat;
                 z-index: -1;
             }
 
             img {
-                --_image-size: 12rem;
                 width: var(--_image-size);
                 height: var(--_image-size);
+                aspect-ratio: 1/1;
                 margin-block-start: var(--space-m);
                 border: 0.4rem solid var(--_personal-color);
                 border-radius: 100%;
@@ -306,12 +318,18 @@
             align-items: center;
             gap: var(--space-xs);
             
-            @container introduction-card (inline-size > calc(40ch + 12rem)) {
+            @container introduction-card (inline-size > calc(55ch + 12rem)) {
                 flex-direction: row;
                 align-items: flex-start;
 
                 &:nth-child(even) {
                     flex-direction: row-reverse;
+                }
+
+                &.emmi {
+                    .decorated-image::before {
+                        transform: translate(-3rem, 8rem) scale(1.1);
+                    }
                 }
             }
         }
