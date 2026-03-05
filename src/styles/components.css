@@ -1,7 +1,7 @@
 .main-navigation {
-    --_curve-color: var(--clr-surface-1);
+    /* --_curve-color: var(--clr-surface-1);
     --_curve-width: 100vw;
-    --_curve-height: 2vh;
+    --_curve-height: 2vh; */
 
     display: flex;
     justify-content: space-between;
@@ -9,7 +9,7 @@
     background: var(--clr-brand);
     padding: var(--space-s) var(--space-m) var(--space-m);
 
-    position: relative;
+    /* position: relative;
 
     &::after {
         content: '';
@@ -23,7 +23,7 @@
         -webkit-mask-size: var(--_curve-width) var(--_curve-height);
         mask-image: url('/assets/curve.svg');
         mask-size: var(--_curve-width) var(--_curve-height);
-    }
+    } */
 }
 
 .hero {
