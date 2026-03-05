@@ -28,11 +28,11 @@ const posts = (await getCollection('blog')).sort(
 								{post.data.heroImage && (
 									<Image width={720} height={360} src={post.data.heroImage} alt="" />
 								)}
-								<h4 class="title">{post.data.title}</h4>
-								<p class="date">
-									<FormattedDate date={post.data.pubDate} />
-								</p>
+								<h2 class="title">{post.data.title}</h2>
 							</a>
+							<p class="date">
+								<FormattedDate date={post.data.pubDate} />
+							</p>
 						</li>
 					))
 				}
@@ -40,3 +40,19 @@ const posts = (await getCollection('blog')).sort(
 		</section>
 	</main>
 </PrimaryLayout>
+
+<style>
+	ul {
+        margin: 0;
+        list-style-type: none;
+
+		a {
+			color: var(--clr-link);
+
+			&:hover,
+			&:focus-visible {
+				color: var(--clr-link-hover);
+			}
+		}
+	}
+</style>
