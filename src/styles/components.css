@@ -1,7 +1,7 @@
 .main-navigation {
-    --_curve-color: var(--clr-surface-1);
+    /* --_curve-color: var(--clr-surface-1);
     --_curve-width: 100vw;
-    --_curve-height: 2vh;
+    --_curve-height: 2vh; */
 
     display: flex;
     justify-content: space-between;
@@ -9,7 +9,7 @@
     background: var(--clr-brand);
     padding: var(--space-s) var(--space-m) var(--space-m);
 
-    position: relative;
+    /* position: relative;
 
     &::after {
         content: '';
@@ -23,7 +23,7 @@
         -webkit-mask-size: var(--_curve-width) var(--_curve-height);
         mask-image: url('/assets/curve.svg');
         mask-size: var(--_curve-width) var(--_curve-height);
-    }
+    } */
 }
 
 .hero {
@@ -38,22 +38,22 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        width: 25vw;
-        height: 25vw;
+        width: 20rem;
+        height: 20rem;
         opacity: 0.4;
         background-image: 
             linear-gradient(oklch(from var(--clr-brand) l c var(--clr-hue-sage))),
             linear-gradient(var(--clr-surface-1)),
             url('/assets/vesivaripallo.png');
         background-blend-mode: color, saturation;
-        background-size: 25vw;
+        background-size: 20rem;
         background-repeat: no-repeat;
-        transform: translate(-27vw, 12vh);
+        transform: translate(-20rem, 12rem);
         z-index: -1;
     }
 
     &::after {
-        --_flower-size: 25vw;
+        --_flower-size: 20rem;
         content: '';
         position: absolute;
         top: 0;
@@ -68,7 +68,7 @@
         background-blend-mode: color, saturation;
         background-size: var(--_flower-size);
         background-repeat: no-repeat;
-        transform: translate(var(--_flower-size), 20vh);
+        transform: translate(var(--_flower-size), 10rem);
     }
 }
 
@@ -160,7 +160,7 @@
     position: relative;
 
     &::before {
-        --_flower-size: 25vw;
+        --_flower-size: 20rem;
         content: '';
         position: absolute;
         bottom: 0;
@@ -175,14 +175,14 @@
         background-blend-mode: color, saturation;
         background-size: var(--_flower-size);
         background-repeat: no-repeat;
-        transform: translate(calc(var(--_flower-size) * -1), 10vh);
+        transform: translate(calc(var(--_flower-size) * -1), 10rem);
         z-index: -1;
     }    
 
     &::after {
-        --_bg-size: 30vw;
-        --_ball-size: 25vw;
-        --_ring-size: 22vw;
+        --_bg-size: 20rem;
+        --_ball-size: 18rem;
+        --_ring-size: 15rem;
         content: '';
         position: absolute;
         top: 0;
@@ -201,7 +201,7 @@
         background-position: 
             right,
             top;
-        transform: translate(var(--_bg-size), 10vh);
+        transform: translate(var(--_bg-size), 10rem);
     }
 }
 
@@ -213,6 +213,7 @@
     .contact-insta img {
         margin-block-start: var(--space-s);
         stroke: var(--clr-surface-2);
+        filter: invert(29%) sepia(9%) saturate(1441%) hue-rotate(37deg) brightness(96%) contrast(91%);
     }
 }
 
@@ -222,7 +223,6 @@
     img {
         aspect-ratio: 3/2;
         border-radius: 1rem;
-        box-shadow: var(--box-shadow);
     }
 }
 
@@ -235,8 +235,6 @@
         margin-block-start: var(--space-l);
     
         li {
-            position: relative;
-            isolation: isolate;
             margin-block-end: var(--space-l);
 
             --_personal-color: var(--clr-brand);
@@ -246,10 +244,15 @@
                 --_personal-color: var(--clr-emmi);
                 --_personal-blob: url('/assets/vesivarikukka.png');
 
-                &::before {
+                .decorated-image::before {
                     top: 0;
                     left: 0;
-                    transform: translate(-3rem, 8rem) scale(1.1);
+                    transform: translate(-5rem, 1rem) scale(1.1) rotate(45deg);
+                }
+
+                img {
+                    -webkit-transform: scaleX(-1);
+                    transform: scaleX(-1);
                 }
             }
 
@@ -257,7 +260,7 @@
                 --_personal-color: var(--clr-jessica);
                 --_personal-blob: url('/assets/rinkula.png');
 
-                &::before {
+                .decorated-image::before {
                     top: 0;
                     right: 0;
                     transform: translate(3rem, 1rem) scale(1.1) rotate(45deg);
@@ -268,33 +271,42 @@
                 --_personal-color: var(--clr-severi);
                 --_personal-blob: url('/assets/vesivaripallo.png');
 
-                &::before {
+                .decorated-image::before {
                     top: 0;
                     left: 0;
                     transform: translate(-3rem, 1rem) scale(1.1) rotate(135deg);
                 }
             }
 
-            &::before {
+            --_image-size: 12rem;
+            --_decoration-size: 10rem;
+
+            .decorated-image {
+                min-width: var(--_image-size);
+                position: relative;
+                isolation: isolate;
+            }
+
+            .decorated-image::before {
                 content: '';
                 position: absolute;
-                width: 10rem;
-                height: 10rem;
+                width: var(--_decoration-size);
+                height: var(--_decoration-size);
                 opacity: 0.4;
                 background-image: 
                     linear-gradient(oklch(from var(--clr-surface-2) l c var(--clr-hue-sage))),
                     linear-gradient(var(--clr-surface-2)),
                     var(--_personal-blob);
                 background-blend-mode: color, saturation;
-                background-size: 10rem;
+                background-size: var(--_decoration-size);
                 background-repeat: no-repeat;
                 z-index: -1;
             }
 
             img {
-                --_image-size: 12rem;
                 width: var(--_image-size);
                 height: var(--_image-size);
+                aspect-ratio: 1/1;
                 margin-block-start: var(--space-m);
                 border: 0.4rem solid var(--_personal-color);
                 border-radius: 100%;
@@ -306,12 +318,18 @@
             align-items: center;
             gap: var(--space-xs);
             
-            @container introduction-card (inline-size > calc(40ch + 12rem)) {
+            @container introduction-card (inline-size > calc(55ch + 12rem)) {
                 flex-direction: row;
                 align-items: flex-start;
 
                 &:nth-child(even) {
                     flex-direction: row-reverse;
+                }
+
+                &.emmi {
+                    .decorated-image::before {
+                        transform: translate(-3rem, 8rem) scale(1.1);
+                    }
                 }
             }
         }

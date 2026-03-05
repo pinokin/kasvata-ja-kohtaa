@@ -1,6 +1,7 @@
 :root {
     --clr-sage-light: #FBFFF4;
     --clr-sage: #AEB79B; /* ORIGINAL: #ADB898 */
+    --clr-sage-dark: #485134;
     --clr-sand: #E3D6C5;
     --clr-pink-light: #FFF1ED;
     --clr-pink: #FFD2C6;
@@ -53,10 +54,13 @@
     --clr-surface-complimentary-2: var(--clr-palette-red-fox-2);
     --clr-surface-complimentary-3: var(--clr-palette-red-fox-3);
 
+    --clr-link: var(--clr-red-wine);
+    --clr-link-hover: var(--clr-red-fox);
+
     --clr-brand: var(--clr-palette-sage-4);
-    --clr-emmi: var(--clr-sand);
+    --clr-emmi: var(--clr-sage); /* --clr-sand */
     --clr-jessica: var(--clr-sage);
-    --clr-severi: var(--clr-pink);
+    --clr-severi: var(--clr-sage); /* --clr-pink */
 }
 
 body {

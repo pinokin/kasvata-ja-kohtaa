@@ -29,7 +29,8 @@ ol {
         padding-inline-start: var(--space-xs);
 
         &::marker {
-            font-size: var(--fs-2);
+            font-size: var(--fs-3);
+            font-family: var(--ff-display);
         }
     }
 
@@ -50,6 +51,22 @@ hr {
     background-blend-mode: color, saturation;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+blockquote {
+    font-family: var(--ff-display);
+    font-size: var(--fs-1);
+    margin-inline-start: var(--space-s);
+    padding-inline-start: var(--space-s);
+    border-left: 6px solid var(--clr-brand);
+
+    > p {
+        margin-block-end: var(--space-xs);
+    }
+
+    + p.attribution {
+        margin-inline-start: var(--space-l);
+    }
 }
 
 /* Helpers */
