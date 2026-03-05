@@ -213,6 +213,7 @@
     .contact-insta img {
         margin-block-start: var(--space-s);
         stroke: var(--clr-surface-2);
+        filter: invert(29%) sepia(9%) saturate(1441%) hue-rotate(37deg) brightness(96%) contrast(91%);
     }
 }
 
@@ -222,7 +223,7 @@
     img {
         aspect-ratio: 3/2;
         border-radius: 1rem;
-        box-shadow: var(--box-shadow);
+        /* box-shadow: var(--box-shadow); */
     }
 }
 
