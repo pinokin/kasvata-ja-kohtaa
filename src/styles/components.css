@@ -38,22 +38,22 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        width: 25vw;
-        height: 25vw;
+        width: 20rem;
+        height: 20rem;
         opacity: 0.4;
         background-image: 
             linear-gradient(oklch(from var(--clr-brand) l c var(--clr-hue-sage))),
             linear-gradient(var(--clr-surface-1)),
             url('/assets/vesivaripallo.png');
         background-blend-mode: color, saturation;
-        background-size: 25vw;
+        background-size: 20rem;
         background-repeat: no-repeat;
-        transform: translate(-27vw, 12vh);
+        transform: translate(-20rem, 12rem);
         z-index: -1;
     }
 
     &::after {
-        --_flower-size: 25vw;
+        --_flower-size: 20rem;
         content: '';
         position: absolute;
         top: 0;
@@ -68,7 +68,7 @@
         background-blend-mode: color, saturation;
         background-size: var(--_flower-size);
         background-repeat: no-repeat;
-        transform: translate(var(--_flower-size), 20vh);
+        transform: translate(var(--_flower-size), 10rem);
     }
 }
 
@@ -160,7 +160,7 @@
     position: relative;
 
     &::before {
-        --_flower-size: 25vw;
+        --_flower-size: 20rem;
         content: '';
         position: absolute;
         bottom: 0;
@@ -175,14 +175,14 @@
         background-blend-mode: color, saturation;
         background-size: var(--_flower-size);
         background-repeat: no-repeat;
-        transform: translate(calc(var(--_flower-size) * -1), 10vh);
+        transform: translate(calc(var(--_flower-size) * -1), 10rem);
         z-index: -1;
     }    
 
     &::after {
-        --_bg-size: 30vw;
-        --_ball-size: 25vw;
-        --_ring-size: 22vw;
+        --_bg-size: 20rem;
+        --_ball-size: 18rem;
+        --_ring-size: 15rem;
         content: '';
         position: absolute;
         top: 0;
@@ -201,7 +201,7 @@
         background-position: 
             right,
             top;
-        transform: translate(var(--_bg-size), 10vh);
+        transform: translate(var(--_bg-size), 10rem);
     }
 }
 
@@ -223,7 +223,6 @@
     img {
         aspect-ratio: 3/2;
         border-radius: 1rem;
-        /* box-shadow: var(--box-shadow); */
     }
 }
 
