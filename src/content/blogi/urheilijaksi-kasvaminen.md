@@ -9,9 +9,13 @@ FC Interin 2011-syntyneiden kausi käynnistyi joulukuussa palaverilla, johon Kas
 
 Ennen joukkueen palaveria teimme tiivistä yhteistyötä joukkueen valmennuksen kanssa. Keskustelimme siitä, millaisia teemoja pelaajat tarvitsevat juuri nyt ja miten sisältö tukisi joukkueen kauden tavoitteita. Valmentajat toivat esiin toiveita muun muassa itseluottamuksesta, harjoittelun laadusta ja joukkuepelaajan arvoista. Nämä teemat punottiin yhdessä osaksi esitystä.
 
-Joukkueen valmentaja Tuomas Hyrsky kuvasi valmisteluvaihetta näin: “Oli hienoa huomata, että esityksen sisältö rakennettiin aidosti meidän joukkueemme tarpeista käsin. Tiesimme jo etukäteen, että pelaajat tulevat saamaan tästä koulutuksesta paljon hyödyllistä tietoa.”
+> “Oli hienoa huomata, että esityksen sisältö rakennettiin aidosti meidän joukkueemme tarpeista käsin. Tiesimme jo etukäteen, että pelaajat tulevat saamaan tästä koulutuksesta paljon hyödyllistä tietoa.”
+
+<p class="attribution">– Tuomas Hyrsky, joukkueen valmentaja koulutuksen valmisteluvaiheesta</p>
 
 Itse tilaisuuteen lisämausteen toi Severin paikalle kutsuma FC Interin edustusjoukkueen kapteeni Juuso Hämäläinen. Kapteenin läsnäolo teki tilaisuudesta konkreettisemman, vielä uskottavamman ja nuorille pelaajille samastuttavamman. Juuso pystyi kertomaan omasta tämän hetken arjestaan: harjoittelusta, palautumisesta, epäonnistumisista ja onnistumisista. Nuoret kuulivat asioita suoraan pelaajalta, joka on kulkenut saman polun, jota he nyt aloittavat.
+
+## Koulutuksen eteneminen
 
 Koulutuksen aikana pelaajat olivat aktiivisesti mukana ja vuorovaikutus syntyi luontevasti. Nuoret jalkapalloilijat uskalsivat kysyä, kommentoida ja kertoa omia kokemuksiaan. Vuorovaikutus teki esityksestä elävän ja aidosti osallistavan.
 

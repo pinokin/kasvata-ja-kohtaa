@@ -11,9 +11,13 @@ Jäin miettimään, mitä tuo hieno missio oikeastaan tarkoittaa. Itselläni on 
 
 Severin ja Emmin kanssa pohdinta jatkui pidemmälle. Severi valmentajana ja entisenä pelaajana tiesi lajista enemmän toisesta näkökulmasta. Jo aiemmin, oman työmme kautta, olimme keskustelleet käytöksellä reagoivien lasten harrastamisesta ja heitä valmentavien aikuisten haasteista kohdata vaikeitakin tilanteita pelikentillä. Näistä keskusteluista heräsi mielenkiinto selvittää, voisimmeko me olla apuna tuon hienon mission tukemisessa. 
 
+## Ensimmäinen projekti käyntiin
+
 Otimme yhteyttä Palloliittoon ja kysyimme, olisiko meidän osaamisellemme tarvetta. Asiaamme suhtauduttiin mielenkiinnolla ja sen tärkeys nähtiin ensimmäisestä yhteydenotosta alkaen. Muutamien yhteydenottojen seurauksena projekti käynnistettiin elokuussa 2024.
 
-Sovimme, että tätä tärkeää aihetta lähestytään rakentamalla kaikille jalkapallon ja futsalin parissa toimiville aikuisille kaksiosainen verkkokoulutus. Lisäksi sovittiin muutama webinaari tukemaan koulutuksia. Olimme kaikki innoissamme tietysti projektistamme, mutta myös yhteistyöstä toistemme kanssa. Koko projektin ajan pidimme säännöllisesti yhteyttä Palloliiton kanssa. Kaikki keskustelut olivat rakentavia ja innostavia. Meitä kohtaan oltiin ystävällisiä ja aihe koettiin merkitykselliseksi, tärkeäksi sekä tarpeelliseksi. 
+Sovimme, että tätä tärkeää aihetta lähestytään rakentamalla kaikille jalkapallon ja futsalin parissa toimiville aikuisille kaksiosainen verkkokoulutus. Lisäksi sovittiin muutama webinaari tukemaan koulutuksia. Olimme kaikki innoissamme tietysti projektistamme, mutta myös yhteistyöstä toistemme kanssa. Koko projektin ajan pidimme säännöllisesti yhteyttä Palloliiton kanssa. Kaikki keskustelut olivat rakentavia ja innostavia. Meitä kohtaan oltiin ystävällisiä ja aihe koettiin merkitykselliseksi, tärkeäksi sekä tarpeelliseksi.
+
+## Verkkokoulutusten sisällön rakentaminen
 
 Verkkokoulutusten teemoiksi valittiin Keinoja puuttua haastavaan käytökseen ja Työkaluja joukkueen ilmapiirin rakentamiseen. Ensimmäisen kokonaisuuden rakentaminen alkoi välittömästi. Valehtelematta työtunteja kului lukemattomia. Teimme tahoillamme taustatyötä tutustuen Palloliiton strategiaan ja valmennuslinjaan. Välillä kokoonnuimme jakamaan ajatuksiamme. Alussa tekemämme runko muovautui sujuvasti prosessin aikana. Oli hauska nähdä, miten osiot vaihtoivat paikkaa, ne täydentyivät ja asioita lisättiin tai poistettiin. Keskusteluita käytiin puhelimessa, viesteillä ja kasvokkain.
 
@@ -21,9 +25,13 @@ Kokonaisuus rakentui johdannon kautta ensin pohtimaan valmentajan tai toimihenki
 
 Koulutusta rakentaessa pyrimme pitämään kirkkaasti mielessä sen, mihin koko firmankin toiminta perustuu: toimiva ryhmä kokonaisuutena tukee yksilöä ja vastavuoroisesti yksilön tukeminen hyödyttää koko ryhmää. Molempien verkkokoulutusten sisällöt hyödyttävät varmasti koko joukkueen toimintaa ja tukevat jokaista pelaajaa, mutta erityisesti halusimme pitää esillä sitä, miten nämä samat keinot toimivat tilanteessa, jossa pelaaja haastaa käytöksellään tai tarvitsee muulla tavalla erityistä tukea. Pidimme tärkeänä, että koulutusten myötä hahmottuisi pitkäjänteisen työskentelyn ja haasteiden ennaltaehkäisyn merkitys, mutta että ne toisaalta tarjoaisivat konkreettisia keinoja purkamaan tilanteita, jotka ovat jo muodostuneet haastaviksi.
 
+## Koulutusten toteuttaminen webinaareina
+
 Webinaarit pidettiin huhtikuussa ja syyskuussa 2025. Aiheeksi valittiin tunteita herättävä Konfliktit seuratoiminnassa. Samasta aiheesta Emmi ja Severi kävivät toukokuussa kouluttamassa seurojen toiminnanjohtajia Helsingissä Palloliiton toimistolla. Webinaareissa käytiin läpi konfliktien ennaltaehkäisyä, erilaisia konfliktityyppejä ja tietysti konfliktinratkaisukeinoja. Samassa yhteydessä kerrattiin arvoja, pelisääntöjä, rooleja sekä tunne- ja vuorovaikutustaitoja. Jälleen ohjelmassa oli tietoa yhdistettynä omiin pohdintoihin tehtävien avulla.
 
-Toinen verkkokoulutuskokonaisuus julkaistiin syksyllä 2025 otsikolla Työkaluja joukkueen ilmapiirin rakentamiseen. Tästä koulutuksesta osallistujat saavat tietoa tunnetaidoista, haastavista tunteista ja niiden ohjaamisesta, kiusaamisen ehkäisystä ja joukkueen ilmapiirin rakennuspalikoista sekä konflikteista. 
+Toinen verkkokoulutuskokonaisuus julkaistiin syksyllä 2025 otsikolla Työkaluja joukkueen ilmapiirin rakentamiseen. Tästä koulutuksesta osallistujat saavat tietoa tunnetaidoista, haastavista tunteista ja niiden ohjaamisesta, kiusaamisen ehkäisystä ja joukkueen ilmapiirin rakennuspalikoista sekä konflikteista.
+
+## Opit matkaan
 
 Matkan varrella tuli opittua ja koettua kaikenlaista uutta. Opimme käyttämään meille vierasta koulutusalustaa, jäsentämään omia ajatuksiamme monipuolisiksi teksteiksi, videoiksi ja äänitiedostoiksi sekä tietysti kaikenlaista tietoa lajista nimeltä jalkapallo. Saimme kohdata uusia ihmisiä ja käydä hedelmällisiä keskusteluita heidän kanssaan. Välillä työskentely oli intensiivistä ja välillä jutut rönsyilivät vaikka ja mihin. Mukaan mahtui hetkiä, jolloin nauramiselta oli vaikea nähdä kirjoitettuja tekstejä ja hetkiä, jolloin ajatukset eivät tahtoneet jäsentyä haluamallamme tavalla. Pääasiassa työskentelimme jonkun kotona pöydän ääressä, mutta tulipa kokeiltua myös puheen tallentamista suljetussa makuuhuoneessa peiton alla. Lopputulokseen olemme tyytyväisiä.
 
