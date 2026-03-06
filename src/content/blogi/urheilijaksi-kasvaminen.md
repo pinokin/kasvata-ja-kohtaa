@@ -15,7 +15,7 @@ Ennen joukkueen palaveria teimme tiivistä yhteistyötä joukkueen valmennuksen 
 
 Itse tilaisuuteen lisämausteen toi Severin paikalle kutsuma FC Interin edustusjoukkueen kapteeni Juuso Hämäläinen. Kapteenin läsnäolo teki tilaisuudesta konkreettisemman, vielä uskottavamman ja nuorille pelaajille samastuttavamman. Juuso pystyi kertomaan omasta tämän hetken arjestaan: harjoittelusta, palautumisesta, epäonnistumisista ja onnistumisista. Nuoret kuulivat asioita suoraan pelaajalta, joka on kulkenut saman polun, jota he nyt aloittavat.
 
-## Koulutuksen eteneminen
+## Pelaajat mukana keskustelussa
 
 Koulutuksen aikana pelaajat olivat aktiivisesti mukana ja vuorovaikutus syntyi luontevasti. Nuoret jalkapalloilijat uskalsivat kysyä, kommentoida ja kertoa omia kokemuksiaan. Vuorovaikutus teki esityksestä elävän ja aidosti osallistavan.
 
