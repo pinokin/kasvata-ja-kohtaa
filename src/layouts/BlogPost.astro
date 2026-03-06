@@ -20,29 +20,19 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		<title>{title} - Kasvata ja kohtaa</title>
 		<style>
 			main {
-				width: calc(100% - 2em);
-				max-width: 100%;
 				margin: 0;
 			}
 			.hero-image {
-				margin-block-start: 2rem;
-				width: 100%;
+				grid-column: 1 / -1;
 			}
 			.hero-image img {
 				display: block;
 				margin: 0 auto;
-				aspect-ratio: 3/2;
-		        border-radius: 1rem;
-			}
-			.prose {
-				width: 720px;
-				max-width: calc(100% - 2em);
-				margin: auto;
-				padding: 1em;
-				color: rgb(var(--gray-dark));
+				aspect-ratio: 4/1;
+				object-fit: cover;
 			}
 			.title {
-				margin-bottom: 1em;
+				margin: 1em;
 				padding: 1em 0;
 				text-align: center;
 				line-height: 1;
@@ -63,11 +53,11 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 	<body>
 		<Header />
 		<main>
-			<article>
+			<article class="content-grid">
 				<div class="hero-image">
-					{heroImage && <Image width={1020} height={510} src={heroImage} alt="" />}
+					{heroImage && <Image width={1200} height={400} src={heroImage} alt="" class="full-width" />}
 				</div>
-				<div class="prose">
+				<div>
 					<div class="title">
 						<h1>{title}</h1>
 						<div class="date">
