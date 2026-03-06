@@ -1,6 +1,6 @@
 ---
-title: 'Ylen erityinen päivä'
-description: 'Ylen erityinen päivä'
+title: 'YLEn erityinen päivä'
+description: 'YLEn erityinen päivä'
 pubDate: '2025-12-01'
 heroImage: '../../assets/blog-placeholder-3.jpg'
 ---
@@ -18,3 +18,5 @@ Esityksessä käytiin esimerkkioppilaan avulla läpi, miten opettajan ja koulul�
 ## Koulutukseen osallistujat
 
 Paikalla oli noin 50 lääkäriä, joista osa työskenteli koululääkäreinä. Puheenvuoromme herättivät runsaasti kysymyksiä, ja niihin oli ilo vastata heti paikan päällä. Keskustelua olisi voinut jatkaa pidempäänkin ja tärkeästä aiheesta olisi voinut helposti puhua koko päivän. Yhteistyö toisen ammattilaisen kanssa oli mielenkiintoista ja antoisaa. Tämä prosessi oli tärkeän aiheen lisäksi myös hyvä muistutus siitä, miten yhteistyö tuo aina uusia näkökulmia ja osaamista omaankin tekemiseen. Onneksi meillä on ihmisiä eri ammattikunnissa tekemässä työtä lasten ja nuorten hyvinvoinnin eteen suurella sydämellä.
+
+> ”Jessican ja Lauran kanssa oli helppo tehdä yhteistyötä alusta alkaen. Koulutuksen järjestäjän näkökulmasta on ihanaa heti huomata, että tarkkaa ohjeistusta puheenvuoroista ei tarvitse antaa vaan innostuneet osaajat onnistuvat hiomaan esityksen kuulijakunnalle sopivaksi itse. Luennossa näkyi ammattimainen ote ja se rytmittyi hyvin erityisopettajan ja lääkärin eri näkökulmia tuovaksi kokonaisuudeksi, jota kuulijakunta jaksoi seurata. Luennon mielenkiintoa lisäsi tapausesimerkit, jotka avasivat ajattelua, miten voimme yhteistyössä auttaa lapsia parhaiten ja mikä kenenkin ammattilaisen rooli on. Luennoijat onnistuivat luomaan myös psykologisesti turvallisen tilan, jossa uskalsi kuulijatkin kysyä sekä luennon aikana ja sen jälkeen.”
