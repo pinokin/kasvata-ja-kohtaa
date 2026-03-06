@@ -2,7 +2,7 @@
 title: 'Jalkapalloa jokaiselle'
 description: 'Jalkapalloa jokaiselle'
 pubDate: '2025-12-03'
-heroImage: '../../assets/blog-placeholder-3.jpg'
+heroImage: '../../assets/jalkapalloa-jokaiselle-bts.webp'
 ---
 
 Yrityksemme ensimmäinen työtehtävä löytyi somekanavan päivityksestä. Palloliitto Suomen suurimpana lajiliittona julkaisi uuden Suomalaisen jalkapallon ja futsalin strategian huhtikuussa 2024. Heidän missionsa seuraavaksi neljäksi vuodeksi oli Jalkapalloa jokaiselle. 

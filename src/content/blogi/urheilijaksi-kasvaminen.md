@@ -2,7 +2,7 @@
 title: 'Urheilijaksi kasvaminen'
 description: 'Urheilijaksi kasvaminen'
 pubDate: '2025-12-02'
-heroImage: '../../assets/blog-placeholder-3.jpg'
+heroImage: '../../assets/urheilijaksi-kasvaminen.webp'
 ---
 
 FC Interin 2011-syntyneiden kausi käynnistyi joulukuussa palaverilla, johon Kasvata & kohtaa kutsuttiin puhumaan nuorille pelaajille urheilijaksi kasvamisesta. Tilaisuus oli esimerkki siitä, miten suunniteltu sisältö, hyvä valmistautuminen ja aito vuorovaikutus voivat luoda merkityksellisen hetken koko joukkueelle. 

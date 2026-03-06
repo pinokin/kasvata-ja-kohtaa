@@ -19,14 +19,14 @@ const posts = (await getCollection('blog')).sort(
 	<main class="content-grid">
 		<h1>Blogi</h1>
 		<p>Täältä voit lukea juttuja meistä ja meidän tekemisistä!</p>
-		<section>
+		<section class="blog-posts">
 			<ul>
 				{
 					posts.map((post) => (
 						<li>
 							<a href={`/blogi/${post.id}/`}>
 								{post.data.heroImage && (
-									<Image width={720} height={360} src={post.data.heroImage} alt="" />
+									<Image width={720} height={300} src={post.data.heroImage} alt="" />
 								)}
 								<h2 class="title">{post.data.title}</h2>
 							</a>
@@ -42,6 +42,10 @@ const posts = (await getCollection('blog')).sort(
 </PrimaryLayout>
 
 <style>
+	.blog-posts {
+		margin-block-end: var(--space-xl);
+	}
+
 	ul {
         margin: 0;
         list-style-type: none;
@@ -56,8 +60,9 @@ const posts = (await getCollection('blog')).sort(
 		}
 
 		img {
-	        aspect-ratio: 3/2;
+	        aspect-ratio: 4/1;
 	        border-radius: 1rem;
+			object-fit: cover;
 		}
 	}
 </style>

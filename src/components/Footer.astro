@@ -11,9 +11,9 @@ import Navigation from "./Navigation.astro";
             <p>
                 Y-tunnus: 3494394-7 (Tiimitaito Oy)<br />
                 email: <a href="mailto:info@kasvatajakohtaa.fi">info@kasvatajakohtaa.fi</a>
-                <a class="contact-insta" href="https://instagram.com/kasvatajakohtaa">
-					<img src="/assets/instagram.svg" alt="" width="32px" />
-					<span class="sr-only">Kasvata & kohtaa Instagramissa</span>
+                <a class="contact-insta" href="https://www.instagram.com/kasvatajakohtaa">
+					<img src="/assets/instagram.svg" alt="" width="24px" />
+					<span>Kasvata & kohtaa Instagramissa</span>
 				</a>
             </p>
             <p></p>
@@ -54,12 +54,14 @@ import Navigation from "./Navigation.astro";
         }
 
         .contact-insta {
-            display: block;
-            padding-block-start: var(--space-xs);
+            display: flex;
+            gap: var(--space-xs);
+            padding-block-start: var(--space-s);
 
             img {
-                width: 32px;
-                height: 36px;
+                width: 24px;
+                height: 26px;
+                display: inline-block;
                 filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(279deg) brightness(102%) contrast(101%);
             }
         }
