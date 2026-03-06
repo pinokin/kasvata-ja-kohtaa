@@ -17,6 +17,14 @@ button {
     min-width: fit-content;
 }
 
+a {
+    color: var(--clr-link);
+
+    &:hover {
+        color: var(--clr-link-hover);
+    }
+}
+
 p {
     margin-block-end: var(--space-m);
 }

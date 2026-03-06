@@ -15,7 +15,7 @@
 }
 
 main {
-    margin-block: var(--space-m) var(--space-xl);
+    margin-block-start: var(--space-m);
 }
 
 h1, h2 {

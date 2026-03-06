@@ -158,6 +158,7 @@
 
 .details {
     position: relative;
+    margin-block-end: var(--space-xl);
 
     &::before {
         --_flower-size: 20rem;
@@ -223,11 +224,19 @@
     border-radius: 1rem;
     background-color: var(--clr-surface-2);
 
-    .contact-insta img {
-        margin-block-start: var(--space-s);
-        stroke: var(--clr-surface-2);
-        filter: invert(29%) sepia(9%) saturate(1441%) hue-rotate(37deg) brightness(96%) contrast(91%);
+    .contact-insta {
+        display: flex;
+        gap: var(--space-xs);
+        align-items: center;
+
+        img {
+            display: inline-block;
+            /* margin-block-start: var(--space-s); */
+            stroke: var(--clr-surface-2);
+            filter: invert(29%) sepia(9%) saturate(1441%) hue-rotate(37deg) brightness(96%) contrast(91%);
+        }
     }
+
 }
 
 .who-we-are {
