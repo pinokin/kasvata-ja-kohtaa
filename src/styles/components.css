@@ -245,6 +245,8 @@
     img {
         aspect-ratio: 3/2;
         border-radius: 1rem;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
     }
 }
 
