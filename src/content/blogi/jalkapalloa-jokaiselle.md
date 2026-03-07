@@ -7,7 +7,7 @@ heroImage: '../../assets/jalkapalloa-jokaiselle-bts.webp'
 
 Yrityksemme ensimmäinen työtehtävä löytyi somekanavan päivityksestä. Palloliitto Suomen suurimpana lajiliittona julkaisi uuden Suomalaisen jalkapallon ja futsalin strategian huhtikuussa 2024. Heidän missionsa seuraavaksi neljäksi vuodeksi oli Jalkapalloa jokaiselle. 
 
-Jäin miettimään, mitä tuo hieno missio oikeastaan tarkoittaa. Itselläni on kolme jalkapalloilevaa poikaa ja olen saanut mielenkiinnolla tutustua lajiin heidän kauttaan. Jäin pohtimaan lukuisia keskusteluja kentän laidoilla pelaajien, vanhempien, toimihenkilöiden ja ylipäätään jalkapallosta kiinnostuneiden kanssa. 
+Jäin miettimään, mitä tuo hieno missio oikeastaan tarkoittaa. Itselläni on kolme jalkapalloilevaa poikaa ja olen saanut mielenkiinnolla tutustua lajiin heidän kauttaan. Jäin pohtimaan lukuisia keskusteluja kentän laidoilla pelaajien, vanhempien, toimihenkilöiden ja ylipäätään jalkapallosta kiinnostuneiden kanssa.
 
 Severin ja Emmin kanssa pohdinta jatkui pidemmälle. Severi valmentajana ja entisenä pelaajana tiesi lajista enemmän toisesta näkökulmasta. Jo aiemmin, oman työmme kautta, olimme keskustelleet käytöksellä reagoivien lasten harrastamisesta ja heitä valmentavien aikuisten haasteista kohdata vaikeitakin tilanteita pelikentillä. <b>Näistä keskusteluista heräsi mielenkiinto selvittää, voisimmeko me olla apuna tuon hienon mission tukemisessa.</b>
 

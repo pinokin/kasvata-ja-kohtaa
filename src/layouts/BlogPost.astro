@@ -31,6 +31,10 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				aspect-ratio: 4/1;
 				object-fit: cover;
 			}
+			.blog-post > p > img {
+				max-height: 400px;
+				object-fit: cover;
+			}
 			.title {
 				margin: 1em;
 				padding: 1em 0;
@@ -57,7 +61,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				<div class="hero-image">
 					{heroImage && <Image width={1200} height={400} src={heroImage} alt="" class="full-width" />}
 				</div>
-				<div>
+				<div class="blog-post">
 					<div class="title">
 						<h1>{title}</h1>
 						<div class="date">
