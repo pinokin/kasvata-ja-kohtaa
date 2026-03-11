@@ -7,7 +7,7 @@
     justify-content: space-between;
     align-items: center;
     background: var(--clr-brand);
-    padding: var(--space-s) var(--space-m) var(--space-m);
+    padding: var(--space-xs) var(--space-m) var(--space-xs);
 
     /* position: relative;
 
@@ -196,7 +196,7 @@
     position: relative;
     margin-block-end: var(--space-xl);
 
-    --_flower-size: 12rem;
+    --_flower-size: 8rem;
 
     &::before {
         content: '';
@@ -213,7 +213,7 @@
         background-blend-mode: color, saturation;
         background-size: var(--_flower-size);
         background-repeat: no-repeat;
-        transform: translate(0, 9rem);
+        transform: translate(0, 5rem);
         z-index: -1;
     }    
 
@@ -263,6 +263,13 @@
             background-position: left top;
             background-size: var(--fs-1);
         }
+    }
+}
+
+.testimonials {
+    li {
+        list-style: none;
+        margin-block-end: var(--space-m);
     }
 }
 
