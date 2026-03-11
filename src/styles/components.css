@@ -7,7 +7,7 @@
     justify-content: space-between;
     align-items: center;
     background: var(--clr-brand);
-    padding: var(--space-s) var(--space-m) var(--space-m);
+    padding: var(--space-xs) var(--space-m) var(--space-xs);
 
     /* position: relative;
 
@@ -28,32 +28,54 @@
 
 .hero {
     position: relative;
+    margin-block-end: var(--space-m);
 
     h1 {
         text-align: center;
     }
+
+    .button-group {
+        display: flex;
+        gap: var(--space-s);
+        margin-block-end: var(--space-m);
+
+        a {
+            display: inline-block;
+            padding: var(--space-2xs) var(--space-xs);
+            border-radius: 8px;
+            text-decoration: none;
+            background-color: var(--clr-cta-button);
+            color: var(--clr-cta-button-text);
+
+            &:hover {
+                background-color: var(--clr-cta-button-hover);
+            }
+        }
+    }
+
+    --_ball-size: 12rem;
+    --_flower-size: 15rem;
 
     &::before {
         content: '';
         position: absolute;
         bottom: 0;
         left: 0;
-        width: 20rem;
-        height: 20rem;
+        width: var(--_ball-size);
+        height: var(--_ball-size);
         opacity: 0.4;
         background-image: 
             linear-gradient(oklch(from var(--clr-brand) l c var(--clr-hue-sage))),
             linear-gradient(var(--clr-surface-1)),
             url('/assets/vesivaripallo.png');
         background-blend-mode: color, saturation;
-        background-size: 20rem;
+        background-size: var(--_ball-size);
         background-repeat: no-repeat;
-        transform: translate(-20rem, 12rem);
+        transform: translate(-5rem, var(--_ball-size));
         z-index: -1;
     }
 
     &::after {
-        --_flower-size: 20rem;
         content: '';
         position: absolute;
         top: 0;
@@ -68,7 +90,26 @@
         background-blend-mode: color, saturation;
         background-size: var(--_flower-size);
         background-repeat: no-repeat;
-        transform: translate(var(--_flower-size), 10rem);
+        transform: translate(10rem, -3rem);
+        z-index: -1;
+    }
+
+    @media (width > 900px) {
+
+        margin-block-end: 0;
+
+        &::before {
+            --_ball-size: 20rem;
+            bottom: 0;
+            left: 0;
+            transform: translate(calc(var(--_ball-size) * -1), 12rem);
+        }
+
+        &::after {
+            --_flower-size: 20rem;
+            transform: translate(var(--_flower-size), 10rem);
+        }
+        
     }
 }
 
@@ -120,37 +161,58 @@
                 background-color: var(--_service-color);
             }
 
-            @container services-grid (inline-size > calc(40ch * 2)) {
-
-                &:nth-child(odd) {
-                    padding-inline-end: var(--_service-padding);
-                    border-image: var(--_conic-gradient) 0 0 0 1/0 50%/0 100vw;
-                }
-
-                &:nth-child(even) {
-                    padding-inline-start: var(--_service-padding);
-                    border-image: var(--_conic-gradient) 0 1 0 0/0 50%/0 100vw;
-                }
-
-            }
-
             &::after {
                 content: '';
                 position: absolute;
                 top: 0;
                 left: 0;
                 width: var(--_icon-size);
-                height: var(--_icon-size);
+                height: calc(var(--_icon-size) + 2px);
                 opacity: 0.5;
                 background-image: 
-                    /* linear-gradient(oklch(from var(--clr-red-fox) l c var(--_service-color))), */
                     linear-gradient(var(--_service-color)),
                     url('/assets/rinkula.png');
                 background-blend-mode: color, saturation;
                 background-size: var(--_icon-size);
                 background-repeat: no-repeat;
                 background-position: center center;
-                transform: translate(20cqw, 1rem);
+                transform: translate(47cqw, 1rem);
+            }
+
+            h3 {
+                text-align: center;
+
+                .subtitle {
+                    display: block;
+                    font-size: 0.5em;
+                    margin-block-start: var(--space-3xs);
+                    text-transform: lowercase;
+                }
+            }
+
+            @container services-grid (inline-size > calc(40ch * 2)) {
+
+                h3 {
+                    text-align: left;
+                }
+
+                &:nth-child(odd) {
+                    padding-inline-end: var(--_service-padding);
+                    border-image: var(--_conic-gradient) 0 0 0 1/0 50%/0 100vw;
+
+                    &::after {
+                        transform: translate(0, 1rem);
+                    }
+                }
+
+                &:nth-child(even) {
+                    padding-inline-start: var(--_service-padding);
+                    border-image: var(--_conic-gradient) 0 1 0 0/0 50%/0 100vw;
+
+                    &::after {
+                        transform: translate(var(--_service-padding), 1rem);
+                    }
+                }
             }
         }
     }
@@ -158,14 +220,15 @@
 
 .details {
     position: relative;
-    margin-block-end: var(--space-xl);
+    margin-block: var(--space-m) var(--space-xl);
+
+    --_flower-size: 8rem;
 
     &::before {
-        --_flower-size: 20rem;
         content: '';
         position: absolute;
         bottom: 0;
-        left: 0;
+        left: -15%;
         width: var(--_flower-size);
         height: var(--_flower-size);
         opacity: 0.5;
@@ -176,33 +239,51 @@
         background-blend-mode: color, saturation;
         background-size: var(--_flower-size);
         background-repeat: no-repeat;
-        transform: translate(calc(var(--_flower-size) * -1), 10rem);
+        transform: translate(0, 5rem);
         z-index: -1;
     }    
 
     &::after {
-        --_bg-size: 20rem;
-        --_ball-size: 18rem;
-        --_ring-size: 15rem;
         content: '';
         position: absolute;
         top: 0;
         right: 0;
-        width: var(--_bg-size);
-        height: var(--_bg-size);
+        width: 12rem;
+        height: 13rem;
         opacity: 0.3;
         background-image: 
             linear-gradient(oklch(from var(--clr-brand) l c var(--clr-hue-sage))),
             linear-gradient(var(--clr-surface-1)),
-            url('/assets/rinkula.png'),
-            url('/assets/vesivaripallo.png');
-        background-blend-mode: color, saturation;
-        background-size: var(--_ring-size), var(--_ball-size);
+            url('/assets/rinkula.png');
+        background-blend-mode: saturation;
+        background-size: 12rem;
         background-repeat: no-repeat;
-        background-position: 
-            right,
-            top;
-        transform: translate(var(--_bg-size), 10rem);
+        background-position: right;
+        transform: translate(10rem, -5rem);
+        z-index: -1;
+    }
+
+    @media (width > 900px) {
+
+        &::before {
+            --_flower-size: 20rem;
+            transform: translate(-10rem, 10rem);
+        }
+
+        &::after {
+            width: 16rem;
+            height: 17rem;
+            background-size: 16rem;
+            transform: translate(18rem, 5rem);
+        }
+    }
+
+    .themes {
+        li {
+            margin-inline-start: var(--space-l);
+            margin-block-end: var(--space-xs);
+            padding-inline-start: var(--space-s);
+        }
     }
 
     .our-values {
@@ -216,6 +297,13 @@
             background-position: left top;
             background-size: var(--fs-1);
         }
+    }
+}
+
+.testimonials {
+    li {
+        list-style: none;
+        margin-block-end: var(--space-m);
     }
 }
 
