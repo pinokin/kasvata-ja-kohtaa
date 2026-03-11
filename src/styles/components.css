@@ -34,6 +34,24 @@
         text-align: center;
     }
 
+    .button-group {
+        display: flex;
+        gap: var(--space-s);
+        margin-block-end: var(--space-m);
+
+        a {
+            display: inline-block;
+            padding: var(--space-2xs) var(--space-xs);
+            border-radius: 8px;
+            background-color: var(--clr-cta-button);
+            color: var(--clr-cta-button-text);
+
+            &:hover {
+                background-color: var(--clr-cta-button-hover);
+            }
+        }
+    }
+
     --_ball-size: 12rem;
     --_flower-size: 15rem;
 
@@ -162,6 +180,13 @@
 
             h3 {
                 text-align: center;
+
+                .subtitle {
+                    display: block;
+                    font-size: 0.5em;
+                    margin-block-start: var(--space-3xs);
+                    text-transform: lowercase;
+                }
             }
 
             @container services-grid (inline-size > calc(40ch * 2)) {
@@ -194,7 +219,7 @@
 
 .details {
     position: relative;
-    margin-block-end: var(--space-xl);
+    margin-block: var(--space-m) var(--space-xl);
 
     --_flower-size: 8rem;
 
@@ -249,6 +274,14 @@
             height: 17rem;
             background-size: 16rem;
             transform: translate(18rem, 5rem);
+        }
+    }
+
+    .themes {
+        li {
+            margin-inline-start: var(--space-l);
+            margin-block-end: var(--space-xs);
+            padding-inline-start: var(--space-s);
         }
     }
 
