@@ -120,37 +120,51 @@
                 background-color: var(--_service-color);
             }
 
-            @container services-grid (inline-size > calc(40ch * 2)) {
-
-                &:nth-child(odd) {
-                    padding-inline-end: var(--_service-padding);
-                    border-image: var(--_conic-gradient) 0 0 0 1/0 50%/0 100vw;
-                }
-
-                &:nth-child(even) {
-                    padding-inline-start: var(--_service-padding);
-                    border-image: var(--_conic-gradient) 0 1 0 0/0 50%/0 100vw;
-                }
-
-            }
-
             &::after {
                 content: '';
                 position: absolute;
                 top: 0;
                 left: 0;
                 width: var(--_icon-size);
-                height: var(--_icon-size);
+                height: calc(var(--_icon-size) + 2px);
                 opacity: 0.5;
                 background-image: 
-                    /* linear-gradient(oklch(from var(--clr-red-fox) l c var(--_service-color))), */
                     linear-gradient(var(--_service-color)),
                     url('/assets/rinkula.png');
                 background-blend-mode: color, saturation;
                 background-size: var(--_icon-size);
                 background-repeat: no-repeat;
                 background-position: center center;
-                transform: translate(20cqw, 1rem);
+                transform: translate(47cqw, 1rem);
+            }
+
+            h3 {
+                text-align: center;
+            }
+
+            @container services-grid (inline-size > calc(40ch * 2)) {
+
+                h3 {
+                    text-align: left;
+                }
+
+                &:nth-child(odd) {
+                    padding-inline-end: var(--_service-padding);
+                    border-image: var(--_conic-gradient) 0 0 0 1/0 50%/0 100vw;
+
+                    &::after {
+                        transform: translate(0, 1rem);
+                    }
+                }
+
+                &:nth-child(even) {
+                    padding-inline-start: var(--_service-padding);
+                    border-image: var(--_conic-gradient) 0 1 0 0/0 50%/0 100vw;
+
+                    &::after {
+                        transform: translate(var(--_service-padding), 1rem);
+                    }
+                }
             }
         }
     }
