@@ -43,6 +43,7 @@
             display: inline-block;
             padding: var(--space-2xs) var(--space-xs);
             border-radius: 8px;
+            text-decoration: none;
             background-color: var(--clr-cta-button);
             color: var(--clr-cta-button-text);
 
