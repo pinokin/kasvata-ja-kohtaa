@@ -50,6 +50,14 @@
         text-align: center;
     }
 
+    .questions {
+		font-size: var(--fs-0);
+	}
+
+    p:last-child() {
+        margin-block-end: var(--space-m);
+    }
+
     --_ball-size: 12rem;
     --_flower-size: 15rem;
 
@@ -150,7 +158,6 @@
 }
 
 .services {
-    margin-block: var(--space-xl);
 
     ul {
         margin: 0;
@@ -250,9 +257,15 @@
 }
 
 .details {
-    position: relative;
-    margin-block: var(--space-m) var(--space-xl);
 
+    padding-block: var(--space-xl);
+
+    &.secondary-color {
+        background-color: var(--clr-surface-secondary-1);
+        color: var(--clr-text-secondary-1);
+    }
+
+    position: relative;
     --_flower-size: 8rem;
 
     &::before {
@@ -332,9 +345,68 @@
 }
 
 .testimonials {
+    margin-block: var(--space-m) var(--space-xl);
+
     li {
         list-style: none;
         margin-block-end: var(--space-m);
+    }
+
+    position: relative;
+    --_flower-size: 8rem;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: -15%;
+        width: var(--_flower-size);
+        height: var(--_flower-size);
+        opacity: 0.5;
+        background-image: 
+            linear-gradient(oklch(from var(--clr-brand) l c var(--clr-hue-sage))),
+            linear-gradient(var(--clr-surface-1)),
+            url('/assets/vesivarikukka.png');
+        background-blend-mode: color, saturation;
+        background-size: var(--_flower-size);
+        background-repeat: no-repeat;
+        transform: translate(0, 5rem);
+        z-index: -1;
+    }    
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 12rem;
+        height: 13rem;
+        opacity: 0.3;
+        background-image: 
+            linear-gradient(oklch(from var(--clr-brand) l c var(--clr-hue-sage))),
+            linear-gradient(var(--clr-surface-1)),
+            url('/assets/rinkula.png');
+        background-blend-mode: saturation;
+        background-size: 12rem;
+        background-repeat: no-repeat;
+        background-position: right;
+        transform: translate(10rem, -5rem);
+        z-index: -1;
+    }
+
+    @media (width > 900px) {
+
+        &::before {
+            --_flower-size: 20rem;
+            transform: translate(-10rem, 10rem);
+        }
+
+        &::after {
+            width: 16rem;
+            height: 17rem;
+            background-size: 16rem;
+            transform: translate(18rem, 5rem);
+        }
     }
 }
 
@@ -365,13 +437,14 @@
 }
 
 .who-we-are {
-    margin-block: var(--space-l) var(--space-xl);
+    margin-block: var(--space-m) var(--space-xl);
 
     img {
         aspect-ratio: 3/2;
         border-radius: 1rem;
         -webkit-transform: scaleX(-1);
         transform: scaleX(-1);
+        margin-block-end: var(--space-m);
     }
 }
 
