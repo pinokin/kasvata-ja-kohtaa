@@ -312,19 +312,25 @@
     border-radius: 1rem;
     background-color: var(--clr-surface-2);
 
+    .contact-email,
     .contact-insta {
         display: flex;
         gap: var(--space-xs);
         align-items: center;
+        margin-block-start: var(--space-2xs);
 
         img {
             display: inline-block;
-            /* margin-block-start: var(--space-s); */
             stroke: var(--clr-surface-2);
             filter: invert(29%) sepia(9%) saturate(1441%) hue-rotate(37deg) brightness(96%) contrast(91%);
         }
     }
 
+    .contact-email {
+        img {
+            margin-inline-start: -3px;
+        }
+    }
 }
 
 .who-we-are {

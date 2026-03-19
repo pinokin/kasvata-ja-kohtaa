@@ -13,12 +13,14 @@ import PrimaryLayout from "../layouts/PrimaryLayout.astro"
 			<article class="contact-methods">
 				<p>Tavoitat meidät parhaiten sähköpostilla ja Instagramista.</p>
 				<p>
-					Sähköposti: <a href="mailto:info@kasvatajakohtaa.fi">info@kasvatajakohtaa.fi</a>
-				</p>
-				<p>
+					<a class="contact-email" href="mailto:info@kasvatajakohtaa.fi">
+						<img src="/assets/email.svg" alt="" width="38px" />
+						<span class="sr-only">Lähetä meille sähköpostia osoitteeseen </span>
+						<span>info@kasvatajakohtaa.fi</span>
+					</a>
 					<a class="contact-insta" href="https://instagram.com/kasvatajakohtaa">
 						<img src="/assets/instagram.svg" alt="" width="32px" />
-						<span class="sr-only">Kasvata & kohtaa Instagramissa</span>
+						<span class="sr-only">Seuraa meitä Instagramissa </span>
 						<span>@kasvatajakohtaa</span>
 					</a>
 				</p>
