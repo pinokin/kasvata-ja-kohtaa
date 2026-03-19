@@ -94,10 +94,6 @@
     }
 }
 
-.cta {
-    padding-inline: var(--space-xl);
-}
-
 .cta,
 .cta-footer {
     .button-group {
