@@ -34,25 +34,6 @@
         text-align: center;
     }
 
-    .button-group {
-        display: flex;
-        gap: var(--space-s);
-        margin-block-end: var(--space-m);
-
-        a {
-            display: inline-block;
-            padding: var(--space-2xs) var(--space-xs);
-            border-radius: 8px;
-            text-decoration: none;
-            background-color: var(--clr-cta-button);
-            color: var(--clr-cta-button-text);
-
-            &:hover {
-                background-color: var(--clr-cta-button-hover);
-            }
-        }
-    }
-
     --_ball-size: 12rem;
     --_flower-size: 15rem;
 
@@ -110,6 +91,41 @@
             transform: translate(var(--_flower-size), 10rem);
         }
         
+    }
+}
+
+.cta {
+    padding-inline: var(--space-xl);
+
+    .button-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--space-s);
+        margin-block-end: var(--space-m);
+
+        a {
+            min-width: min(250px, 100%);
+            display: flex;
+            flex: 1;
+            gap: var(--space-2xs);
+            align-items: center;
+            place-content: center;
+            padding: var(--space-2xs) var(--space-xs);
+            border-radius: 8px;
+            text-decoration: none;
+            background-color: var(--clr-cta-button);
+            color: var(--clr-cta-button-text);
+
+            &:hover {
+                background-color: var(--clr-cta-button-hover);
+            }
+
+            img {
+                width: 24px;
+                display: inline-block;
+                filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(279deg) brightness(102%) contrast(101%);
+            }
+        }
     }
 }
 
