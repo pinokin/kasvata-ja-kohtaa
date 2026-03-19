@@ -1,17 +1,33 @@
 .main-navigation {
+
+    padding-block: var(--space-xs);
+    background: var(--clr-brand);
+
+    .navigation-links {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    h2 {
+        margin: 0;
+    }
+
+    .some-links {
+        display: flex;
+        gap: var(--space-xs);
+
+        img {
+            display: inline-block;
+            filter: invert(27%) sepia(44%) saturate(302%) hue-rotate(37deg) brightness(96%) contrast(93%);
+        }
+    }
+
     /* --_curve-color: var(--clr-surface-1);
     --_curve-width: 100vw;
     --_curve-height: 2vh; */
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: var(--clr-brand);
-    padding: var(--space-xs) var(--space-m) var(--space-xs);
-
-    /* position: relative;
-
-    &::after {
+    /* &::after {
         content: '';
         position: absolute;
         width: 100vw;

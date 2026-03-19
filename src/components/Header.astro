@@ -2,14 +2,26 @@
 import Navigation from "./Navigation.astro";
 ---
 
-<header class="main-navigation">
-    <h2>
-        <a href="/" class="logo">
-            <img src="/assets/logo-harmaa.png" width="80px" height="80px" alt="" />
-            <span class="sr-only">Kasvata & kohtaa</span>
-        </a>
-    </h2>
-    <Navigation placement="header" orientation="horizontal" />
+<header class="content-grid main-navigation">
+    <div class="breakout">
+        <section class="navigation-links">
+            <h2>
+                <a href="/" class="logo">
+                    <img src="/assets/logo-harmaa.png" width="80px" height="80px" alt="" />
+                    <span class="sr-only">Kasvata & kohtaa</span>
+                </a>
+            </h2>
+            <Navigation placement="header" orientation="horizontal" />
+            <div class="some-links">
+                <a href="mailto:info@kasvatajakohtaa.fi">
+                    <img src="/assets/email.svg" alt="Kysy lisää sähköpostilla" width="38px" />
+                </a>
+                <a href="https://www.instagram.com/kasvatajakohtaa">
+                    <img src="/assets/instagram.svg" alt="Seuraa meitä Instagramissa" width="32px" />
+                </a>
+            </div>
+        </section>
+    </div>
 </header>
 
 <style>
