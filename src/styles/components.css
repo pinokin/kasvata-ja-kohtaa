@@ -96,7 +96,10 @@
 
 .cta {
     padding-inline: var(--space-xl);
+}
 
+.cta,
+.cta-footer {
     .button-group {
         display: flex;
         flex-wrap: wrap;
@@ -467,5 +470,32 @@
                 }
             }
         }
+    }
+}
+
+.footer-content {
+    padding-block-start: var(--space-m);
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-m);
+
+    & > * {
+        flex: 1;
+        min-width: min(250px, 100%);
+    }
+
+    h2 {
+        font-size: var(--fs-2);
+        margin: 0;
+        margin-block-end: var(--space-xs);
+    }
+
+    a {
+        color: inherit;
+    }
+    
+    article p:last-child {
+        margin-block-end: 0;
     }
 }
