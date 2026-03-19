@@ -83,6 +83,16 @@ blockquote {
 
 /* Helpers */
 
+.skip-link {
+    position: absolute;
+    top: -3em;
+    background: white;
+
+    &:focus {
+        top: 0;
+    }
+}
+
 .sr-only {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);

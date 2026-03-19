@@ -3,22 +3,28 @@ import Navigation from "./Navigation.astro";
 ---
 
 <footer class="content-grid">
-    <img class="full-width" src="/images/footer.webp" alt="" />
+    <img class="footer-image full-width" src="/images/footer.webp" alt="" />
     <section class="footer-content">
         <Navigation />
-        <article>
+        <div class="column">
             <h2>Kasvata & kohtaa</h2>
             <p>
                 Y-tunnus: 3494394-7 (Tiimitaito Oy)<br />
-                Sähköposti: <a href="mailto:info@kasvatajakohtaa.fi">info@kasvatajakohtaa.fi</a>
-                <a class="contact-insta" href="https://www.instagram.com/kasvatajakohtaa">
-					<img src="/assets/instagram.svg" alt="" width="24px" />
-					<span class="sr-only">Kasvata & kohtaa Instagramissa</span>
-                    <span>@kasvatajakohtaa</span>
-				</a>
+                <div class="cta-footer">
+                    <div class="button-group">
+                        <a href="mailto:info@kasvatajakohtaa.fi">
+                            <img src="/assets/email.svg" alt="" width="24px" />
+                            <span>Kysy lisää sähköpostilla</span>
+                        </a>
+                        <a href="https://www.instagram.com/kasvatajakohtaa">
+                            <img src="/assets/instagram.svg" alt="" width="24px" />
+                            <span>Seuraa meitä Instagramissa</span>
+                        </a>
+                    </div>
+                </div>
             </p>
             <p></p>
-        </article>
+        </div>
     </section>
     <section class="copyright full-width">
         Copyright &copy; 2026 Kasvata ja kohtaa
@@ -31,45 +37,10 @@ import Navigation from "./Navigation.astro";
         color: var(--clr-pink-light);
     }
 
-    img {
+    .footer-image {
         aspect-ratio: 3/1;
         object-fit: cover;
         object-position: bottom;
-    }
-
-    .footer-content {
-
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-
-        padding-block: var(--space-m);
-
-        h2 {
-            font-size: var(--fs-2);
-            margin: 0;
-            margin-block-end: var(--space-m);
-        }
-
-        a {
-            color: inherit;
-        }
-
-        .contact-insta {
-            display: flex;
-            gap: var(--space-xs);
-            padding-block-start: var(--space-s);
-
-            img {
-                width: 24px;
-                height: 26px;
-                display: inline-block;
-                filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(279deg) brightness(102%) contrast(101%);
-            }
-        }
-
-        article p:last-child {
-            margin-block-end: 0;
-        }
     }
 
     .copyright {

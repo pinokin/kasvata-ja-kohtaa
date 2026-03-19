@@ -1,17 +1,33 @@
 .main-navigation {
+
+    padding-block: var(--space-xs);
+    background: var(--clr-brand);
+
+    .navigation-links {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    h2 {
+        margin: 0;
+    }
+
+    .some-links {
+        display: flex;
+        gap: var(--space-xs);
+
+        img {
+            display: inline-block;
+            filter: invert(27%) sepia(44%) saturate(302%) hue-rotate(37deg) brightness(96%) contrast(93%);
+        }
+    }
+
     /* --_curve-color: var(--clr-surface-1);
     --_curve-width: 100vw;
     --_curve-height: 2vh; */
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: var(--clr-brand);
-    padding: var(--space-xs) var(--space-m) var(--space-xs);
-
-    /* position: relative;
-
-    &::after {
+    /* &::after {
         content: '';
         position: absolute;
         width: 100vw;
@@ -34,23 +50,12 @@
         text-align: center;
     }
 
-    .button-group {
-        display: flex;
-        gap: var(--space-s);
+    .questions {
+		font-size: var(--fs-0);
+	}
+
+    p:last-child() {
         margin-block-end: var(--space-m);
-
-        a {
-            display: inline-block;
-            padding: var(--space-2xs) var(--space-xs);
-            border-radius: 8px;
-            text-decoration: none;
-            background-color: var(--clr-cta-button);
-            color: var(--clr-cta-button-text);
-
-            &:hover {
-                background-color: var(--clr-cta-button-hover);
-            }
-        }
     }
 
     --_ball-size: 12rem;
@@ -113,13 +118,46 @@
     }
 }
 
+.cta,
+.cta-footer {
+    .button-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--space-s);
+        margin-block-end: var(--space-m);
+
+        a {
+            min-width: min(250px, 100%);
+            display: flex;
+            flex: 1;
+            gap: var(--space-2xs);
+            align-items: center;
+            place-content: center;
+            padding: var(--space-2xs) var(--space-xs);
+            border-radius: 8px;
+            text-decoration: none;
+            background-color: var(--clr-cta-button);
+            color: var(--clr-cta-button-text);
+
+            &:hover {
+                background-color: var(--clr-cta-button-hover);
+            }
+
+            img {
+                width: 24px;
+                display: inline-block;
+                filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(279deg) brightness(102%) contrast(101%);
+            }
+        }
+    }
+}
+
 .ingress {
     text-align: center;
     font-size: var(--fs-0);
 }
 
 .services {
-    margin-block: var(--space-xl);
 
     ul {
         margin: 0;
@@ -219,9 +257,15 @@
 }
 
 .details {
-    position: relative;
-    margin-block: var(--space-m) var(--space-xl);
 
+    padding-block: var(--space-xl);
+
+    &.secondary-color {
+        background-color: var(--clr-surface-secondary-1);
+        color: var(--clr-text-secondary-1);
+    }
+
+    position: relative;
     --_flower-size: 8rem;
 
     &::before {
@@ -301,9 +345,68 @@
 }
 
 .testimonials {
+    margin-block: var(--space-m) var(--space-xl);
+
     li {
         list-style: none;
         margin-block-end: var(--space-m);
+    }
+
+    position: relative;
+    --_flower-size: 8rem;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: -15%;
+        width: var(--_flower-size);
+        height: var(--_flower-size);
+        opacity: 0.5;
+        background-image: 
+            linear-gradient(oklch(from var(--clr-brand) l c var(--clr-hue-sage))),
+            linear-gradient(var(--clr-surface-1)),
+            url('/assets/vesivarikukka.png');
+        background-blend-mode: color, saturation;
+        background-size: var(--_flower-size);
+        background-repeat: no-repeat;
+        transform: translate(0, 5rem);
+        z-index: -1;
+    }    
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 12rem;
+        height: 13rem;
+        opacity: 0.3;
+        background-image: 
+            linear-gradient(oklch(from var(--clr-brand) l c var(--clr-hue-sage))),
+            linear-gradient(var(--clr-surface-1)),
+            url('/assets/rinkula.png');
+        background-blend-mode: saturation;
+        background-size: 12rem;
+        background-repeat: no-repeat;
+        background-position: right;
+        transform: translate(10rem, -5rem);
+        z-index: -1;
+    }
+
+    @media (width > 900px) {
+
+        &::before {
+            --_flower-size: 20rem;
+            transform: translate(-10rem, 10rem);
+        }
+
+        &::after {
+            width: 16rem;
+            height: 17rem;
+            background-size: 16rem;
+            transform: translate(18rem, 5rem);
+        }
     }
 }
 
@@ -312,29 +415,36 @@
     border-radius: 1rem;
     background-color: var(--clr-surface-2);
 
+    .contact-email,
     .contact-insta {
         display: flex;
         gap: var(--space-xs);
         align-items: center;
+        margin-block-start: var(--space-2xs);
 
         img {
             display: inline-block;
-            /* margin-block-start: var(--space-s); */
             stroke: var(--clr-surface-2);
             filter: invert(29%) sepia(9%) saturate(1441%) hue-rotate(37deg) brightness(96%) contrast(91%);
         }
     }
 
+    .contact-email {
+        img {
+            margin-inline-start: -3px;
+        }
+    }
 }
 
 .who-we-are {
-    margin-block: var(--space-l) var(--space-xl);
+    margin-block: var(--space-m) var(--space-xl);
 
     img {
         aspect-ratio: 3/2;
         border-radius: 1rem;
         -webkit-transform: scaleX(-1);
         transform: scaleX(-1);
+        margin-block-end: var(--space-m);
     }
 }
 
@@ -445,5 +555,32 @@
                 }
             }
         }
+    }
+}
+
+.footer-content {
+    padding-block-start: var(--space-m);
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-m);
+
+    & > * {
+        flex: 1;
+        min-width: min(250px, 100%);
+    }
+
+    h2 {
+        font-size: var(--fs-2);
+        margin: 0;
+        margin-block-end: var(--space-xs);
+    }
+
+    a {
+        color: inherit;
+    }
+    
+    article p:last-child {
+        margin-block-end: 0;
     }
 }

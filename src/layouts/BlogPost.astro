@@ -55,8 +55,9 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 	</head>
 
 	<body>
+		<a href="#content" class="skip-link">Hyppää sisältöön</a>
 		<Header />
-		<main>
+		<main id="content">
 			<article class="content-grid">
 				<div class="hero-image">
 					{heroImage && <Image width={1200} height={400} src={heroImage} alt="" class="full-width" />}

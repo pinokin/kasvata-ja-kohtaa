@@ -13,7 +13,7 @@ Ennen joukkueen palaveria teimme tiivistä yhteistyötä joukkueen valmennuksen 
 
 <p class="attribution">– Tuomas Hyrsky, joukkueen valmentaja koulutuksen valmisteluvaiheesta</p>
 
-Itse tilaisuuteen lisämausteen toi Severin paikalle kutsuma FC Interin edustusjoukkueen kapteeni Juuso Hämäläinen. Kapteenin läsnäolo teki tilaisuudesta konkreettisemman, vielä uskottavamman ja nuorille pelaajille samastuttavamman. Juuso pystyi kertomaan omasta tämän hetken arjestaan: harjoittelusta, palautumisesta, epäonnistumisista ja onnistumisista. Nuoret kuulivat asioita suoraan pelaajalta, joka on kulkenut saman polun, jota he nyt aloittavat.
+Itse tilaisuuteen lisämausteen toi [Severin](/meista#severi) paikalle kutsuma FC Interin edustusjoukkueen kapteeni Juuso Hämäläinen. Kapteenin läsnäolo teki tilaisuudesta konkreettisemman, vielä uskottavamman ja nuorille pelaajille samastuttavamman. Juuso pystyi kertomaan omasta tämän hetken arjestaan: harjoittelusta, palautumisesta, epäonnistumisista ja onnistumisista. Nuoret kuulivat asioita suoraan pelaajalta, joka on kulkenut saman polun, jota he nyt aloittavat.
 
 ## Pelaajat mukana keskustelussa
 

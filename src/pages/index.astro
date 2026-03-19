@@ -5,23 +5,28 @@ import PrimaryLayout from "../layouts/PrimaryLayout.astro"
 <PrimaryLayout
 	title="Etusivu">
 
-	<main class="content-grid">
+	<main id="content" class="content-grid">
 		
 		<section class="hero">
 
 			<h1>Kasvata & kohtaa</h1>
 			<p class="ingress">Jokainen lapsi ja nuori ansaitsee tulla nähdyksi ja ymmärretyksi – myös silloin, kun arki tuo mukanaan haasteita.</p>
 			<hr />
-			<p class="questions">Onko joukkueessasi mukana lapsi, joka toistuvasti omalla toiminnallaan häiritsee muiden tekemistä ja uhmaa aikuisia? Onko harrastusryhmässäsi nuori, jolle keskittyminen yhteiseen tekemiseen tai epäonnistuminen tuntuu mahdottomalta? Jääkö joku toistuvasti ulkopuolelle tai tulee kiusatuksi? Onko ryhmässä negatiivinen ilmapiiri ja tunteet purkautuvat hallitsemattomasti?</p>
+			<p class="questions">Onko joukkueessasi mukana lapsi, joka toistuvasti omalla toiminnallaan <b>häiritsee muiden tekemistä</b> ja uhmaa aikuisia? Onko harrastusryhmässäsi nuori, jolle <b>keskittyminen</b> yhteiseen tekemiseen <b>tai epäonnistuminen tuntuu mahdottomalta</b>? Jääkö joku toistuvasti ulkopuolelle tai <b>tulee kiusatuksi</b>? Onko ryhmässä <b>negatiivinen ilmapiiri</b> ja tunteet purkautuvat hallitsemattomasti?</p>
 			<div class="cta">
 				<p>Jos tunnistat näitä tilanteita omassa arjessasi, ota yhteyttä. Pohditaan yhdessä, miten voisimme olla avuksi ja etsitään keinoja, jotka toimivat juuri teidän ryhmässänne!</p>
 				<div class="button-group">
-					<a href="mailto:info@kasvatajakohtaa.fi">Kysy lisää sähköpostilla</a>
-					<a href="https://www.instagram.com/kasvatajakohtaa">Laita viestiä Instagramissa</a>
+					<a href="mailto:info@kasvatajakohtaa.fi">
+						<img src="/assets/email.svg" alt="" width="24px" />
+						<span>Kysy lisää sähköpostilla</span>
+					</a>
+					<a href="https://www.instagram.com/kasvatajakohtaa">
+						<img src="/assets/instagram.svg" alt="" width="24px" />
+						<span>Seuraa meitä Instagramissa</span>
+					</a>
 				</div>
 			</div>
 			<p>Tarjoamme käytännönläheistä apua, jonka tavoitteena on yhdessä löytää keinoja ratkaista juuri tällaisia tilanteita ja kohdata käytöksellään haastavia lapsia ja nuoria välittäen, johdonmukaisesti ja ratkaisukeskeisesti.</p>
-			<p>Järjestämme koulutuksia, valmennusta ja työpajoja, joissa opitaan konkreettisia tapoja tukea yksilöä ja samalla vahvistaa ryhmää. Luodaan yhdessä ympäristö, jossa jokaisella on mahdollisuus onnistua ja kuulua joukkoon.</p>
 
 		</section>
 
@@ -63,20 +68,12 @@ import PrimaryLayout from "../layouts/PrimaryLayout.astro"
 
 		</section>
 
-		<section class="details">
+		<section class="details secondary-color full-width">
 
 			<h2 class="sr-only">Teemat</h2>
 
 			<p>
-				Tuemme aikuisia (esim. opettajia, valmentajia, kasvattajia, asiakastyön ammattilaisia, yhteisöjen toimijoita ja vanhempia) rakentamaan ympäristöjä, joissa jokainen lapsi, nuori ja aikuinen voi tulla kohdatuksi arvostavasti. Koulutuksemme yhdistävät käytännönläheisen tiedon ja realistisen voimavaroja vahvistavan otteen.
-			</p>
-
-			<p>
-				Autamme ymmärtämään käyttäytymisen taustoja, tunnistamaan erilaisia tuen tarpeita ja löytämään keinoja rakentaa turvallisia, johdonmukaisia ja välittäviä kohtaamisia niin työssä, vapaa-ajalla kuin harrastustoiminnassa.
-			</p>
-
-			<p>
-				Koulutukset voidaan toteuttaa luentoina, verkkokursseina, vanhempainiltoina tai räätälöityinä kokonaisuuksina eri kohderyhmille. Jokainen koulutus suunnitellaan asiakkaan tarpeiden mukaan.
+				<b>Palvelumme on suunnattu</b> esimerkiksi opettajille, valmentajille, kasvattajille, vanhemmille ja kaikille muille lasten ja nuorten kanssa erilaisissa yhteisöissä toimiville. Jokainen koulutus suunnitellaan asiakkaan tarpeiden mukaan.
 			</p>
 
 			<p>
@@ -139,14 +136,3 @@ import PrimaryLayout from "../layouts/PrimaryLayout.astro"
 
 	</main>
 </PrimaryLayout>
-
-<style>
-	.questions {
-		font-size: var(--fs-0);
-		font-style: italic;
-	}
-
-	.cta {
-		padding-inline: var(--space-xl);
-	}
-</style>

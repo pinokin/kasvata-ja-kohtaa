@@ -1,13 +1,11 @@
 ---
-title: 'YLEn erityinen päivä'
-description: 'YLEn erityinen päivä'
+title: 'ADHD erityisopettajan ja lääkärin näkökulmasta'
+description: 'ADHD erityisopettajan ja lääkärin näkökulmasta'
 pubDate: '2025-12-01'
 heroImage: '../../assets/blog-placeholder-3.jpg'
 ---
 
-Kasvata & kohtaa osallistui yleislääketieteen erikoistumiskoulutuksessa (YLE) olevien lääkäreiden koulutuspäivään yhdessä koululääkärin kanssa. Meidän aiheenamme oli ADHD koulun arjessa sekä miten lapsen ja nuoren arkea voidaan tukea eri ammattilaisten yhteistyönä.
-
-Esityksemme suunnittelu lähti toivotun aiheen pohjalta liikkeelle yhteistyössä koululääkärin kanssa. Kävimme keskustelua omista näkökulmistamme ja kokosimme vuoropuhelulle rungon. Teimme molemmat omat osuutemme ja lopulta yhdistimme ne toimivaksi kokonaisuudeksi. Yhteistyö sujui mutkattomasti ja hyvässä hengessä. Oli hauska huomata, kuinka sujuvasti molempien ajatukset nivoutuivat oppilasta tukevaksi kokonaisuudeksi.
+[Jessica](/meista#jessica) osallistui lääkäreiden koulutuspäivään yhdessä koululääkärin kanssa. Meidän aiheenamme oli ADHD koulun arjessa sekä miten lapsen ja nuoren arkea voidaan tukea eri ammattilaisten yhteistyönä.
 
 ## Miltä ADHD-oppilaan koulupäivä voi näyttää?
 
@@ -21,4 +19,4 @@ Paikalla oli noin 50 lääkäriä, joista osa työskenteli koululääkäreinä. 
 
 > ”Jessican ja Lauran kanssa oli helppo tehdä yhteistyötä alusta alkaen. Koulutuksen järjestäjän näkökulmasta on ihanaa heti huomata, että tarkkaa ohjeistusta puheenvuoroista ei tarvitse antaa vaan innostuneet osaajat onnistuvat hiomaan esityksen kuulijakunnalle sopivaksi itse. Luennossa näkyi ammattimainen ote ja se rytmittyi hyvin erityisopettajan ja lääkärin eri näkökulmia tuovaksi kokonaisuudeksi, jota kuulijakunta jaksoi seurata. Luennon mielenkiintoa lisäsi tapausesimerkit, jotka avasivat ajattelua, miten voimme yhteistyössä auttaa lapsia parhaiten ja mikä kenenkin ammattilaisen rooli on. Luennoijat onnistuivat luomaan myös psykologisesti turvallisen tilan, jossa uskalsi kuulijatkin kysyä sekä luennon aikana ja sen jälkeen.”
 
-<p class="attribution">– YTA koulutusylilääkäri</p>
+<p class="attribution">– Järjestäjä</p>
