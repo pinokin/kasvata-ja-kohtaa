@@ -1,7 +1,7 @@
 .main-navigation {
 
     padding-block: var(--space-xs);
-    background: var(--clr-brand);
+    background: var(--clr-current-brand);
 
     .navigation-links {
         display: flex;
@@ -19,7 +19,7 @@
 
         img {
             display: inline-block;
-            filter: invert(27%) sepia(44%) saturate(302%) hue-rotate(37deg) brightness(96%) contrast(93%);
+            filter: var(--clr-current-filter);
         }
     }
 
@@ -146,7 +146,7 @@
             img {
                 width: 24px;
                 display: inline-block;
-                filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(279deg) brightness(102%) contrast(101%);
+                filter: var(--clr-filter-red-fox-light);
             }
         }
     }
@@ -163,7 +163,7 @@
             }
 
             img {
-                filter: invert(10%) sepia(38%) saturate(863%) hue-rotate(329deg) brightness(99%) contrast(97%);
+                filter: var(--clr-filter-red-fox-dark);
             }
         }
     }
@@ -282,7 +282,7 @@
         color: var(--clr-text-secondary-1);
     }
 
-    position: relative;
+    /* position: relative;
     --_flower-size: 8rem;
 
     &::before {
@@ -337,7 +337,7 @@
             background-size: 16rem;
             transform: translate(18rem, 5rem);
         }
-    }
+    } */
 
     .themes {
         li {
