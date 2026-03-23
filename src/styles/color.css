@@ -64,13 +64,12 @@
     --clr-link: var(--clr-red-wine);
     --clr-link-hover: var(--clr-red-fox);
 
-    /* --clr-cta-button: var(--clr-palette-red-fox-3);
-    --clr-cta-button-hover: var(--clr-palette-red-fox-2);
-    --clr-cta-button-text: var(--clr-text-complimentary); */
-
     --clr-cta-button: var(--clr-palette-red-fox-8);
     --clr-cta-button-hover: var(--clr-palette-red-fox-7);
     --clr-cta-button-text: var(--clr-text-complimentary-inverse);
+    --clr-cta-button-secondary: var(--clr-palette-red-fox-2);
+    --clr-cta-button-secondary-hover: var(--clr-palette-red-fox-3);
+    --clr-cta-button-secondary-text: var(--clr-text-complimentary);
 
     --clr-brand: var(--clr-palette-sage-4);
     --clr-current-brand: var(--clr-brand);

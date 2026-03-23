@@ -152,6 +152,23 @@
     }
 }
 
+.cta-footer {
+    .button-group {
+        a {
+            background-color: var(--clr-cta-button-secondary);
+            color: var(--clr-cta-button-secondary-text);
+
+            &:hover {
+                background-color: var(--clr-cta-button-secondary-hover);
+            }
+
+            img {
+                filter: invert(10%) sepia(38%) saturate(863%) hue-rotate(329deg) brightness(99%) contrast(97%);
+            }
+        }
+    }
+}
+
 .ingress {
     text-align: center;
     font-size: var(--fs-0);
