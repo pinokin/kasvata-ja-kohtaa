@@ -73,9 +73,17 @@
     --clr-cta-button-text: var(--clr-text-complimentary-inverse);
 
     --clr-brand: var(--clr-palette-sage-4);
+    --clr-current-brand: var(--clr-brand);
     --clr-emmi: var(--clr-sage); /* --clr-sand */
     --clr-jessica: var(--clr-sage);
     --clr-severi: var(--clr-sage); /* --clr-pink */
+
+    .secondary-color {
+        --clr-bg-default: var(--clr-surface-secondary-1);
+        --clr-text-default: var(--clr-text-secondary-1);
+        --clr-current-hue: var(--clr-hue-red-fox);
+        --clr-current-brand: var(--clr-palette-red-fox-4);
+    }
 }
 
 body {
