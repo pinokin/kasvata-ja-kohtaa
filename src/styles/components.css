@@ -1,7 +1,7 @@
 .main-navigation {
 
     padding-block: var(--space-xs);
-    background: var(--clr-brand);
+    background: var(--clr-current-brand);
 
     .navigation-links {
         display: flex;
@@ -19,7 +19,7 @@
 
         img {
             display: inline-block;
-            filter: invert(27%) sepia(44%) saturate(302%) hue-rotate(37deg) brightness(96%) contrast(93%);
+            filter: var(--clr-current-filter);
         }
     }
 
@@ -118,8 +118,7 @@
     }
 }
 
-.cta,
-.cta-footer {
+.cta {
     .button-group {
         display: flex;
         flex-wrap: wrap;
@@ -146,7 +145,24 @@
             img {
                 width: 24px;
                 display: inline-block;
-                filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(279deg) brightness(102%) contrast(101%);
+                filter: var(--clr-filter-red-fox-light);
+            }
+        }
+    }
+}
+
+.cta-footer {
+    .button-group {
+        margin-block: var(--space-m);
+        
+        a {
+            height: 2rem;
+            display: flex;
+            gap: var(--space-2xs);
+            place-items: center;
+
+            img {
+                filter: var(--clr-filter-red-fox-light);
             }
         }
     }
@@ -263,63 +279,6 @@
     &.secondary-color {
         background-color: var(--clr-surface-secondary-1);
         color: var(--clr-text-secondary-1);
-    }
-
-    position: relative;
-    --_flower-size: 8rem;
-
-    &::before {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: -15%;
-        width: var(--_flower-size);
-        height: var(--_flower-size);
-        opacity: 0.5;
-        background-image: 
-            linear-gradient(oklch(from var(--clr-brand) l c var(--clr-hue-sage))),
-            linear-gradient(var(--clr-surface-1)),
-            url('/assets/vesivarikukka.png');
-        background-blend-mode: color, saturation;
-        background-size: var(--_flower-size);
-        background-repeat: no-repeat;
-        transform: translate(0, 5rem);
-        z-index: -1;
-    }    
-
-    &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 12rem;
-        height: 13rem;
-        opacity: 0.3;
-        background-image: 
-            linear-gradient(oklch(from var(--clr-brand) l c var(--clr-hue-sage))),
-            linear-gradient(var(--clr-surface-1)),
-            url('/assets/rinkula.png');
-        background-blend-mode: saturation;
-        background-size: 12rem;
-        background-repeat: no-repeat;
-        background-position: right;
-        transform: translate(10rem, -5rem);
-        z-index: -1;
-    }
-
-    @media (width > 900px) {
-
-        &::before {
-            --_flower-size: 20rem;
-            transform: translate(-10rem, 10rem);
-        }
-
-        &::after {
-            width: 16rem;
-            height: 17rem;
-            background-size: 16rem;
-            transform: translate(18rem, 5rem);
-        }
     }
 
     .themes {
@@ -445,6 +404,72 @@
         -webkit-transform: scaleX(-1);
         transform: scaleX(-1);
         margin-block-end: var(--space-m);
+    }
+
+    position: relative;
+    /* margin-block-end: var(--space-m); */
+    
+    p:last-child() {
+        margin-block-end: var(--space-m);
+    }
+
+    --_doodle-2-size: 15rem;
+    --_flower-2-size: 15rem;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: var(--_doodle-2-size);
+        height: var(--_doodle-2-size);
+        opacity: 0.4;
+        background-image: 
+            linear-gradient(oklch(from var(--clr-brand) l c var(--clr-hue-sage))),
+            linear-gradient(var(--clr-surface-1)),
+            url('/assets/rinkula.png');
+        background-blend-mode: color, saturation;
+        background-size: var(--_doodle-2-size);
+        background-repeat: no-repeat;
+        transform: translate(var(--_doodle-2-size), var(--_doodle-2-size));
+        z-index: -1;
+    }
+    
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: var(--_flower-2-size);
+        height: var(--_flower-2-size);
+        opacity: 0.5;
+        background-image: 
+            linear-gradient(oklch(from var(--clr-brand) l c var(--clr-hue-sage))),
+            linear-gradient(var(--clr-surface-1)),
+            url('/assets/vesivarikukka.png');
+        background-blend-mode: color, saturation;
+        background-size: var(--_flower-2-size);
+        background-repeat: no-repeat;
+        transform: translate(10rem, -3rem);
+        z-index: -1;
+    }
+
+    @media (width > 900px) {
+
+        margin-block-end: 0;
+
+        &::before {
+            --_doodle-2-size: 20rem;
+            bottom: 0;
+            left: 0;
+            transform: translate(calc(var(--_doodle-2-size) * -1), 12rem);
+        }
+
+        &::after {
+            --_flower-2-size: 20rem;
+            transform: translate(var(--_flower-2-size), 10rem);
+        }
+        
     }
 }
 
