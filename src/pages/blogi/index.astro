@@ -44,6 +44,11 @@ const posts = (await getCollection('blog')).sort(
 <style>
 	.blog-posts {
 		margin-block-end: var(--space-xl);
+
+		img {
+			display: block;
+		    max-width: 100%;
+		}
 	}
 
 	ul {
