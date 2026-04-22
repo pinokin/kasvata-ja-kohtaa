@@ -100,8 +100,12 @@ h5, h6 {
     text-wrap: balance;
 }
 
-h1 {
+.hero h1 {
     font-size: var(--fs-7);
+}
+
+h1 {
+    font-size: var(--fs-6);
     letter-spacing: -0.04em;
 }
 

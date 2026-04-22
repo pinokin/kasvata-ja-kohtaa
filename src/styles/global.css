@@ -78,7 +78,7 @@ blockquote {
     font-size: var(--fs-1);
     margin-inline-start: var(--space-s);
     padding-inline-start: var(--space-s);
-    border-left: 6px solid var(--clr-brand);
+    border-left: 6px solid var(--clr-current-brand);
 
     > p {
         margin-block-end: var(--space-xs);
