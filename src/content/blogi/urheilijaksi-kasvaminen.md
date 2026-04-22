@@ -19,6 +19,6 @@ Itse tilaisuuteen lisämausteen toi [Severin](/meista#severi) paikalle kutsuma F
 
 Koulutuksen aikana pelaajat olivat aktiivisesti mukana ja vuorovaikutus syntyi luontevasti. Nuoret jalkapalloilijat uskalsivat kysyä, kommentoida ja kertoa omia kokemuksiaan. Vuorovaikutus teki esityksestä elävän ja aidosti osallistavan.
 
-Esityksen rakenne kulki konkreettisten esimerkkien, tarinoiden ja pienten tehtävien kautta. Pelaajat pääsivät pohtimaan, mitä urheilijaksi kasvaminen tarkoittaa juuri heidän tämän päivän arjessa.
+Esityksen rakenne kulki konkreettisten esimerkkien, tarinoiden ja pienten tehtävien kautta. Pelaajat pääsivät pohtimaan, mitä urheilijaksi kasvaminen tarkoittaa juuri heidän tämän päivän arjessaan.
 
 Tilaisuuden paras anti oli se, että pelaajat lähtivät kauden starttipalaverista innostuneina ja motivoituneina.
