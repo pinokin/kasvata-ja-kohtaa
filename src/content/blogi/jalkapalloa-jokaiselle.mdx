@@ -5,17 +5,17 @@ pubDate: '2025-12-03'
 heroImage: '../../assets/jalkapalloa-jokaiselle-bts.webp'
 ---
 import { Image } from 'astro:assets';
-import helsinki from '../../assets/jalkapalloa-jokaiselle-helsinki.webp';
-import tiimi from '../../assets/jalkapalloa-jokaiselle-tiimi.webp';
+import helsinki from '../../assets/jalkapalloa-jokaiselle-helsinki-720.webp';
+import tiimi from '../../assets/jalkapalloa-jokaiselle-tiimi-720.webp';
 
 Yrityksemme ensimmäinen työtehtävä löytyi somekanavan päivityksestä. Palloliitto Suomen suurimpana lajiliittona julkaisi uuden Suomalaisen jalkapallon ja futsalin strategian huhtikuussa 2024. Heidän missionsa seuraavaksi neljäksi vuodeksi oli Jalkapalloa jokaiselle. 
 
 <figure>
-    <Image 
+    <Image
         src={tiimi} 
-        alt="Kasvata & kohtaa -tiimi työntouhussa"
-        layout="constrained"
-        width="600" />
+        widths={[240, 540, tiimi.width]}
+        sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, ${tiimi.width}px`}
+        alt="Kasvata & kohtaa -tiimi työntouhussa." />
     <figcaption>Kasvata & kohtaa -tiimi työntouhussa.</figcaption>
 </figure>
 
@@ -42,11 +42,11 @@ Kokonaisuus rakentui johdannon kautta ensin pohtimaan valmentajan tai toimihenki
 Webinaarit pidettiin huhtikuussa ja syyskuussa 2025. Aiheeksi valittiin tunteita herättävä Konfliktit seuratoiminnassa. Samasta aiheesta Emmi ja Severi kävivät toukokuussa kouluttamassa seurojen toiminnanjohtajia Helsingissä Palloliiton toimistolla. Webinaareissa käytiin läpi konfliktien ennaltaehkäisyä, erilaisia konfliktityyppejä ja tietysti konfliktinratkaisukeinoja. Samassa yhteydessä kerrattiin arvoja, pelisääntöjä, rooleja sekä tunne- ja vuorovaikutustaitoja. Jälleen ohjelmassa oli tietoa yhdistettynä omiin pohdintoihin tehtävien avulla.
 
 <figure>
-    <Image 
+    <Image
         src={helsinki} 
-        alt="Emmi ja Severi Helsingissä Palloliiton toimistolla"
-        layout="constrained"
-        width="600" />
+        widths={[240, 540, helsinki.width]}
+        sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, ${helsinki.width}px`}
+        alt="Emmi ja Severi Helsingissä Palloliiton toimistolla." />
     <figcaption>Emmi ja Severi Helsingissä Palloliiton toimistolla.</figcaption>
 </figure>
 

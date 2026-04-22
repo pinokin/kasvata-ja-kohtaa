@@ -199,13 +199,11 @@
             }
 
             &:nth-child(2) {
-                /* --_service-color: var(--clr-pink); */
                 --_service-color: var(--clr-surface-complimentary-2);
                 background-color: var(--_service-color);
             }
 
             &:nth-child(3) {
-                /* --_service-color: var(--clr-sand); */
                 --_service-color: var(--clr-surface-complimentary-3);
                 background-color: var(--_service-color);
             }
