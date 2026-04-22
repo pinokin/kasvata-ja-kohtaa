@@ -581,6 +581,11 @@
     }
 }
 
+.footer-image {
+    display: block;
+    max-width: 100%;
+}
+
 .footer-content {
     padding-block-start: var(--space-m);
 
